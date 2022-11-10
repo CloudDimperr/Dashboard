@@ -15,45 +15,45 @@
 <body>
     <div class="container">
         <div class="navigation">
-            <ul>
-                <li>
-                    <a href="index.html" class="okif">
-                        <span class="logo"><img src="assets/okif.png"></span>
-                        <span class="header">INVENTARIS OKIF FT-UH</span>
+            <ul class="navigation__list navigation__list--hovered">
+                <li class="navigation__item navigation__item--hovered">
+                    <a href="dashboard.html">
+                        <span><img src="assets/okif.png"></span>
+                        <span class="navigation__header">INVENTARIS OKIF FT-UH</span>
                     </a>
                 </li>
-                <li>
-                    <a href="adminprofile.html">
-                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
-                        <span class="title">admin</span>
+                <li class="navigation__item">
+                    <a href="adminprofile.html" class="navigation__details navigation__details--hovered">
+                        <span class="navigation__icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="navigation__title">admin</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <span class="mainmenu">MAIN MENU</span>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__details">
+                        <span class="navigation__mainmenu">MAIN MENU</span>
                     </a>
                 </li>
-                <li>
-                    <a href="index.html">
-                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                        <span class="title">Dashboard</span>
+                <li class="navigation__item">
+                    <a href="dashboard.html" class="navigation__details navigation__details--hovered">
+                        <span class="navigation__icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="navigation__title">Dashboard</span>
                     </a>
                 </li>
-                <li>
-                    <a href="databarang.html">
-                        <span class="icon"><ion-icon name="albums-outline"></ion-icon></span>
-                        <span class="title">Data Barang</span>
+                <li class="navigation__item">
+                    <a href="databarang.html" class="navigation__details navigation__details--hovered">
+                        <span class="navigation__icon"><ion-icon name="albums-outline"></ion-icon></span>
+                        <span class="navigation__title">Data Barang</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <span class="menusignout">SIGN OUT</span>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__details">
+                        <span class="navigation__menusignout">SIGN OUT</span>
                     </a>
                 </li>
-                <li>
-                    <a href="signout.html">
-                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-                        <span class="title">Sign Out</span>
+                <li class="navigation__item">
+                    <a href="signout.html" class="navigation__details navigation__details--hovered">
+                        <span class="navigation__icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="navigation__title">Sign Out</span>
                     </a>
                 </li>
             </ul>
@@ -64,69 +64,69 @@
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
-                <div class="admin">
-                    <a href="adminprofile.html">
+                <div class="admin__btn">
+                    <a href="adminprofile.html" class="admin__btndetails">
                         <ion-icon name="person-circle-outline"></ion-icon> 
-                        <span class="adm">admin</span>
+                        <span class="admin__btntitle">admin</span>
                     </a>
                 </div>
             </div>
 
-            <div class="cardBox">
-                <div class="baik">
+            <div class="card">
+                <div class="card__good">
                     <div>
-                        <div class="jmlbaik">85</div>
-                        <div class="cardName">Barang Baik</div>
+                        <div class="card__goodrate">85</div>
+                        <div class="card__name">Barang Baik</div>
                     </div>
-                    <div class="iconbaik">
+                    <div class="card__goodicon">
                         <ion-icon name="thumbs-up-outline"></ion-icon>
                     </div>
                 </div>
-                <div class="krgbaik">
+                <div class="card__bad">
                     <div>
-                        <div class="jmlkrgbaik">5</div>
-                        <div class="cardName">Barang Kurang Baik</div>
+                        <div class="card__badrate">5</div>
+                        <div class="card__name">Barang Kurang Baik</div>
                     </div>
-                    <div class="iconkrgbaik">
+                    <div class="card__badicon">
                         <ion-icon name="thumbs-down-outline"></ion-icon>
                     </div>
                 </div>
-                <div class="rusak">
+                <div class="card__damage">
                     <div>
-                        <div class="jmlrusak">5</div>
-                        <div class="cardName">Barang Rusak</div>
+                        <div class="card__damagerate">5</div>
+                        <div class="card__name">Barang Rusak</div>
                     </div>
-                    <div class="iconrusak">
+                    <div class="card__damageicon">
                         <ion-icon name="alert-outline"></ion-icon>
                     </div>
                 </div>
-                <div class="hilang">
+                <div class="card__lost">
                     <div>
-                        <div class="jmlhilang">5</div>
-                        <div class="cardName">Barang Hilang</div>
+                        <div class="card__lostrate">5</div>
+                        <div class="card__name">Barang Hilang</div>
                     </div>
-                    <div class="iconhilang">
+                    <div class="card__losticon">
                         <ion-icon name="help-outline"></ion-icon>
                     </div>
                 </div>
-                <div class="barang">
+                <div class="card__item">
                     <div>
-                        <div class="jmlbarang">100</div>
-                        <div class="cardName">Jumlah Semua Barang</div>
+                        <div class="card__itemrate">100</div>
+                        <div class="card__name">Jumlah Semua Barang</div>
                     </div>
-                    <div class="iconbarang">
+                    <div class="card__itemicon">
                         <ion-icon name="file-tray-stacked-outline"></ion-icon>
                     </div>
                 </div>
             </div>
-            <div class="popupsignout">
-                <div class="ketsignout">Apa anda yakin ingin keluar?</div>
-                <div class="pilihansignout">
-                    <a href="index.html">
-                        <span class="tidakout">Batal</span>
+            <div class="signout__popup">
+                <div class="signout__details">Apa anda yakin ingin keluar?</div>
+                <div class="signout__option">
+                    <a href="dashboard.html">
+                        <span class="signout__cancel">Batal</span>
                     </a>  
                     <a href="signin.html">
-                        <span class="yaout">Keluar</span>
+                        <span class="signout">Keluar</span>
                     </a>
                 </div>
             </div>

@@ -1,8 +1,8 @@
-let toggle = document.querySelector('.toggle');
+let toggle = document.querySelector('.main__toggle');
 let navigation = document.querySelector('.navigation');
 let main = document.querySelector('.main');
-let mainmenu = document.querySelector('.mainmenu');
-let menusignout = document.querySelector('.menusignout');
+let mainmenu = document.querySelector('.navigation__mainmenu');
+let menusignout = document.querySelector('.navigation__menusignout');
 
 toggle.onclick = function(){
     navigation.classList.toggle('active');
@@ -11,7 +11,7 @@ toggle.onclick = function(){
     menusignout.classList.toggle('active');
 }
 
-let list = document.querySelectorAll('.navigation li');
+let list = document.querySelectorAll('.navigation__item');
 function activeLink(){
     list.forEach((item) =>
     item.classList.remove('hovered'));

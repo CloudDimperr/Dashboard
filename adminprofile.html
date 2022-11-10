@@ -15,45 +15,45 @@
 <body>
     <div class="container">
         <div class="navigation">
-            <ul>
-                <li>
-                    <a href="index.html" class="okif">
-                        <span class="logo"><img src="assets/okif.png"></span>
-                        <span class="header">INVENTARIS OKIF FT-UH</span>
+            <ul class="navigation__list navigation__list--hovered">
+                <li class="navigation__item navigation__item--hovered">
+                    <a href="dashboard.html">
+                        <span><img src="assets/okif.png"></span>
+                        <span class="navigation__header">INVENTARIS OKIF FT-UH</span>
                     </a>
                 </li>
-                <li>
-                    <a href="adminprofile.html">
-                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
-                        <span class="title">admin</span>
+                <li class="navigation__item">
+                    <a href="adminprofile.html" class="navigation__details navigation__details--hovered">
+                        <span class="navigation__icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="navigation__title">admin</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <span class="mainmenu">MAIN MENU</span>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__details">
+                        <span class="navigation__mainmenu">MAIN MENU</span>
                     </a>
                 </li>
-                <li>
-                    <a href="index.html">
-                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                        <span class="title">Dashboard</span>
+                <li class="navigation__item">
+                    <a href="dashboard.html" class="navigation__details navigation__details--hovered">
+                        <span class="navigation__icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="navigation__title">Dashboard</span>
                     </a>
                 </li>
-                <li>
-                    <a href="databarang.html">
-                        <span class="icon"><ion-icon name="albums-outline"></ion-icon></span>
-                        <span class="title">Data Barang</span>
+                <li class="navigation__item">
+                    <a href="databarang.html" class="navigation__details navigation__details--hovered">
+                        <span class="navigation__icon"><ion-icon name="albums-outline"></ion-icon></span>
+                        <span class="navigation__title">Data Barang</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <span class="menusignout">SIGN OUT</span>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__details">
+                        <span class="navigation__menusignout">SIGN OUT</span>
                     </a>
                 </li>
-                <li>
-                    <a href="signout.html">
-                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-                        <span class="title">Sign Out</span>
+                <li class="navigation__item">
+                    <a href="signout.html" class="navigation__details navigation__details--hovered">
+                        <span class="navigation__icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="navigation__title">Sign Out</span>
                     </a>
                 </li>
             </ul>
@@ -64,35 +64,35 @@
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
-                <div class="admin">
-                    <a href="adminprofile.html">
+                <div class="admin__btn">
+                    <a href="adminprofile.html" class="admin__btndetails">
                         <ion-icon name="person-circle-outline"></ion-icon> 
-                        <span class="adm">admin</span>
+                        <span class="admin__btntitle">admin</span>
                     </a>
                 </div>
             </div>
-            <div class="adminprofile">
-                <div class="adminpic"><ion-icon name="person-circle-outline"></ion-icon></div>
-                <div class="namaadmin">
+            <div class="admin__profile">
+                <div class="admin__pic"><ion-icon name="person-circle-outline"></ion-icon></div>
+                <div class="admin__name">
                     <div>Nama</div>
-                    <div class="labelnama">
+                    <div class="admin__namelabel">
                         <a href="editnama.html">
-                            <span class="ketnama">Admin
+                            <span class="admin__namedetails">Admin
                                 <ion-icon name="create-outline"></ion-icon>
                             </span>
                         </a>  
                     </div>    
                 </div>
-                <div class="passwordadmin">
+                <div class="admin__password">
                     <div>Password</div>
-                    <div class="labelpassword">
-                        <span class="ketpw">********
+                    <div class="admin__passwordlabel">
+                        <span class="admin__passworddetails">********
                             <ion-icon name="eye-off-outline"></ion-icon>
                         </span>
                     </div>
-                    <div class="ubahpw">
+                    <div class="admin__changepw">
                         <a href="ubahpassword.html">
-                            <span class="ketubahpw">Ubah password?</span>
+                            <span class="admin__changepwdetails">Ubah password?</span>
                         </a>
                     </div>
                 </div>
