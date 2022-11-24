@@ -229,6 +229,10 @@ img {
     cursor: pointer;
 }
 
+.admin__btn:hover {
+    background: var(--hoverblue);
+}
+
 .admin__btndetails {
     text-decoration: none;
     color: var(--white);
@@ -440,6 +444,11 @@ img {
     cursor: pointer;
 }
 
+.dataitem__add:hover,
+.dataitem__add--hovered {
+    background-color: #17d714;   
+}
+
 .dataitem__adddetails {
     text-decoration: none;
     color: var(--white);
@@ -535,6 +544,11 @@ img {
     cursor: pointer;
 }
 
+.dataitem__editicon:hover,
+.dataitem__editicon--hovered {
+    background-color: #dcb00e;
+}
+
 .dataitem__deleteicon {
     background: var(--hilang);
     border-radius: 5px;
@@ -542,6 +556,11 @@ img {
     padding-top: 8px;
     color: var(--white);
     cursor: pointer;
+}
+
+.dataitem__deleteicon:hover,
+.dataitem__deleteicon--hovered {
+    background-color: #d10505;
 }
 
 .popup {
@@ -686,6 +705,10 @@ img {
     color: var(--black);
 }
 
+.item__canceladd:hover {
+    background: #979696;
+}
+
 .item__saveadd {
     background: var(--barang);
     padding: 5px 12px;
@@ -694,6 +717,10 @@ img {
     border-radius: 5px;
     cursor: pointer;
     color: var(--white);
+}
+
+.item__saveadd:hover {
+    background: var(--hoverblue);
 }
 
 .item__editoption {
@@ -717,6 +744,10 @@ img {
     color: var(--black);
 }
 
+.item__canceledit:hover {
+    background: #979696;
+}
+
 .item__saveedit {
     background: var(--barang);
     padding: 5px 12px;
@@ -726,6 +757,11 @@ img {
     cursor: pointer;
     color: var(--white);
 }
+
+.item__saveedit:hover {
+    background: var(--hoverblue);
+}
+
 
 .delete__popup {
     position: fixed;
@@ -767,6 +803,10 @@ img {
     color: var(--white);
 }
 
+.delete:hover {
+    background: var(--iconhilang);
+}
+
 .delete__cancel {
     background: #d9d9d9;
     padding: 8px 12px;
@@ -776,6 +816,10 @@ img {
     box-sizing: border-box;
     cursor: pointer;
     color: var(--black);
+}
+
+.delete__cancel:hover {
+    background: #979696;
 }
 
 
@@ -839,7 +883,7 @@ img {
 }
 
 .signin__btn {
-    background: var(--lightblue);
+    background: var(--darkblue);
     width: 80px;
     height: 40px;
     margin-top: 20px;
@@ -848,6 +892,10 @@ img {
     padding-left: 15px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.signin__btn:hover {
+    background: var(--hoverblue);
 }
 
 .signin__btn a {
@@ -897,6 +945,10 @@ img {
     color: var(--white);
 }
 
+.signout:hover {
+    background: var(--iconhilang);
+}
+
 .signout__cancel {
     background: #d9d9d9;
     padding: 8px 12px;
@@ -906,6 +958,10 @@ img {
     box-sizing: border-box;
     cursor: pointer;
     color: var(--black);
+}
+
+.signout__cancel:hover {
+    background: #979696;
 }
 
 /* admin profile */
@@ -933,6 +989,10 @@ img {
     padding-right: 8px;
     width: 255px;
     height: 30px;
+}
+
+.admin__namelabel:hover {
+    background: #979696;
 }
 
 .admin__namelabel a {
@@ -965,6 +1025,10 @@ img {
     height: 30px;
 }
 
+.admin__passwordlabel:hover {
+    background: #979696;
+}
+
 .admin__passworddetails {
     display: flex;
     justify-content: space-between;
@@ -986,6 +1050,10 @@ img {
     cursor: pointer;
 }
 
+.admin__changepwdetails:hover {
+    color: var(--hoverblue);
+}
+
 .admin__nameedit {
     position: relative;
     margin-left: 370px;
@@ -1000,6 +1068,10 @@ img {
     margin-top: 10px;
     width: 20px;
     height: 20px;
+}
+
+.admin__nameedit ion-icon:hover {
+    background: var(--iconkrgbaik);
 }
 
 .admin__nameedit label input {
@@ -1052,17 +1124,42 @@ img {
     box-sizing: border-box;
 }
 
+.password__cancel {
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-top: 5px;
+    padding-left: 15px;
+    border-radius: 5px;
+    background: #d9d9d9;
+    cursor: pointer;
+}
+
+.password__cancel:hover {
+    background: #979696;
+}
+
+.password__cancel a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 .password__save {
     width: 70px;
     height: 30px;
-    padding-top: 4px;
+    margin-top: -30px;
+    margin-left: 320px;
+    padding-top: 5px;
     padding-left: 8px;
-    margin-top: 20px;
-    margin-left: 180px;
     border-radius: 5px;
     color: var(--white);
     background: var(--blue);
     cursor: pointer;
+}
+
+.password__save:hover {
+    background: var(--hoverblue);
 }
 
 .password__save a {

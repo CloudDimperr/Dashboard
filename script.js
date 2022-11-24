@@ -1,14 +1,14 @@
-let toggle = document.querySelector('.main__toggle');
+let toggle = document.querySelector('.toggle');
 let navigation = document.querySelector('.navigation');
 let main = document.querySelector('.main');
 let mainmenu = document.querySelector('.navigation__mainmenu');
 let menusignout = document.querySelector('.navigation__menusignout');
 
 toggle.onclick = function(){
-    navigation.classList.toggle('active');
-    main.classList.toggle('active');
-    mainmenu.classList.toggle('active');
-    menusignout.classList.toggle('active');
+    navigation.classList.toggle('navigation--active');
+    main.classList.toggle('main--active');
+    mainmenu.classList.toggle('navigation__mainmenu--active');
+    menusignout.classList.toggle('navigation__menusignout--active');
 }
 
 let list = document.querySelectorAll('.navigation__item');
