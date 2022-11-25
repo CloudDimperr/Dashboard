@@ -825,6 +825,98 @@ img {
 
 /* sign in */
 
+.signin__container {
+    height: 570.4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.signin__image__logo {
+    width: 140px;
+    height: 140px;
+    margin: 30px 0 40px 0;
+}
+
+.signin__card {
+    background: var(--blue);
+    padding: 20px;
+    width: 300px;
+    height: 340px;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+}
+
+.signin__title {
+    color: var(--white);
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.signin__uname {
+    margin-bottom: 5px;
+    color: var(--white);
+}
+
+.signin__uname label input {
+    width: 260px;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-color: var(--white);
+}
+
+.signin__uname label input {
+    width: 260px;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-color: var(--white);
+}
+
+.signin__password {
+    margin-bottom: 5px;
+    color: var(--white);
+}
+
+.signin__password label input {
+    width: 260px;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-color: var(--white);
+}
+
+.signin__btn {
+    background: var(--darkblue);
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 90px;
+    padding-top: 8px;
+    padding-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin__btn:hover {
+    background: var(--hoverblue);
+}
+
+.signin__btn a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+
+/* .signin__container {}
+
 .logo {
     display: block;
     margin-left: 580px;
@@ -901,14 +993,14 @@ img {
 .signin__btn a {
     text-decoration: none;
     color: var(--white);
-}
+} */
 
 /* sign out */
 
 .signout__popup {
     position: fixed;
-    top: 160px;
-    left: 450px;
+    top: 268px;
+    left: 628px;
     width: 450px;
     height: 200px;
     text-align: center;
