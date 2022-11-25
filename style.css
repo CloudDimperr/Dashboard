@@ -825,24 +825,25 @@ img {
 
 /* sign in */
 
-.logo {
-    display: block;
-    margin-left: 580px;
-    margin-top: 20px;
-    margin-bottom: -150px;
+.signin__container {
+    height: 570.4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.signin__image__logo {
     width: 140px;
     height: 140px;
+    margin: 30px 0 40px 0;
 }
 
 .signin__card {
     background: var(--blue);
-    position: relative;
-    top: 180px;
-    left: 500px;
+    padding: 20px;
     width: 300px;
     height: 340px;
-    padding: 20px;
-    display: block;
     border-radius: 5px;
     box-shadow: 0 5px 30px rgba(0,0,0,0.30);
 }
@@ -857,6 +858,15 @@ img {
 .signin__uname {
     margin-bottom: 5px;
     color: var(--white);
+}
+
+.signin__uname label input {
+    width: 260px;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-color: var(--white);
 }
 
 .signin__uname label input {
@@ -963,7 +973,6 @@ img {
 .signout__cancel:hover {
     background: #979696;
 }
-
 
 /* admin profile */
 
