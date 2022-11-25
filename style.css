@@ -825,25 +825,24 @@ img {
 
 /* sign in */
 
-.signin__container {
-    height: 570.4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-}
-
-.signin__image__logo {
+.logo {
+    display: block;
+    margin-left: 580px;
+    margin-top: 20px;
+    margin-bottom: -150px;
     width: 140px;
     height: 140px;
-    margin: 30px 0 40px 0;
 }
 
 .signin__card {
     background: var(--blue);
-    padding: 20px;
+    position: relative;
+    top: 180px;
+    left: 500px;
     width: 300px;
     height: 340px;
+    padding: 20px;
+    display: block;
     border-radius: 5px;
     box-shadow: 0 5px 30px rgba(0,0,0,0.30);
 }
@@ -858,15 +857,6 @@ img {
 .signin__uname {
     margin-bottom: 5px;
     color: var(--white);
-}
-
-.signin__uname label input {
-    width: 260px;
-    padding: 5px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-color: var(--white);
 }
 
 .signin__uname label input {
@@ -917,8 +907,8 @@ img {
 
 .signout__popup {
     position: fixed;
-    top: 268px;
-    left: 550px;
+    top: 160px;
+    left: 450px;
     width: 450px;
     height: 200px;
     text-align: center;
@@ -973,6 +963,7 @@ img {
 .signout__cancel:hover {
     background: #979696;
 }
+
 
 /* admin profile */
 
