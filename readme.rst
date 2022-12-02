@@ -1,71 +1,50 @@
-###################
-What is CodeIgniter
-###################
+### Sistem Informasi Admin Panel
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+## Sign In
+![Sign in](https://user-images.githubusercontent.com/114127219/203921853-05eae2d2-c70e-4ef6-a515-71ac5fef2b6c.png)
 
-*******************
-Release Information
-*******************
+## Sign Out
+![Sign out](https://user-images.githubusercontent.com/114127219/203923827-3d59f487-38d5-493f-a0f4-e49c51dd4257.png)
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+## Dashboard
+![Dashboard](https://user-images.githubusercontent.com/114127219/203922220-575975a2-cfe9-4611-8e7d-84ddc07f1f1f.png)
 
-**************************
-Changelog and New Features
-**************************
+## Admin
+![Admin](https://user-images.githubusercontent.com/114127219/203922442-eccff672-c74b-4d20-a38f-0435f787bef4.png)
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+## Edit nama
+![Edit nama](https://user-images.githubusercontent.com/114127219/203924166-d49811bf-96ae-4f92-ab82-4b95d7c9c2a1.png)
 
-*******************
-Server Requirements
-*******************
+## Edit Password
+![Edit password](https://user-images.githubusercontent.com/114127219/203923622-ffa77d89-6519-4fb5-9847-cc3f2c395d8f.png)
 
-PHP version 5.6 or newer is recommended.
+## Data Barang
+![Data barang](https://user-images.githubusercontent.com/114127219/203922638-ac32a7d1-6ff9-40aa-b7fd-e1184e1b0e1f.png)
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+## Tambah Barang & Edit Barang
+![Tambah barang](https://user-images.githubusercontent.com/114127219/203922964-97c72a71-7723-4db4-b5d1-c515da3a71ac.png)
+![Edit barang](https://user-images.githubusercontent.com/114127219/203922977-58f75156-5f62-4c92-a582-52945b570887.png)
 
-************
-Installation
-************
+## Hapus Barang
+![Hapus barang](https://user-images.githubusercontent.com/114127219/203923212-440afea4-e014-408b-9730-5511f66ab589.png)
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+## Toogle active
+![toggle of](https://user-images.githubusercontent.com/114127219/203923994-edf08d79-bebc-4b9c-9498-b318dab2daec.png)
 
-*******
-License
-*******
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+Request change:
+1. Ubah warna card di Dashboard
+2. Di Dashboard tambahkan tombol untuk melihat semua card
+3. Tambahkan grafik untuk melihat statistik dan lain-lain
+4. Pindahkan admin ke topbar
+5. Untuk data barang ubah pewarnaan
+6. Variasikan table (https://preview.themeforest.net/item/dandelion-pro-react-admin-dashboard-template/full_screen_preview/22890261?_ga=2.18516474.2101177281.1669970117-1619338700.1669970117)
+7. Ubah pop-up menjadi form
+8. masukkan drop down, time picker/time date, option, check box, toogle, text area, slider, wysiwyg editor pada form
 
-*********
-Resources
-*********
+Tugas
+-- : grafik atau chart
+-- : variasi table
+-- : form
+-- : galeri,notifikasi dan BE
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
