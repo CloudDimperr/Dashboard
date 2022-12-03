@@ -25,13 +25,13 @@
                     </a>
                 </li>
                 <li class="navigation__item">
-                    <a href="galeri.html" class="navigation__details navigation__details--hovered">
+                    <a href="<?= base_url();?>Galeri" class="navigation__details navigation__details--hovered">
                         <span class="navigation__icon"><ion-icon name="images-outline"></ion-icon></span>
                         <span class="navigation__title">Galeri</span>
                     </a>
                 </li>
                 <li class="navigation__item">
-                    <a href="texteditor.html" class="navigation__details navigation__details--hovered">
+                    <a href="<?= base_url();?>Texteditor" class="navigation__details navigation__details--hovered">
                         <span class="navigation__icon"><ion-icon name="document-text-outline"></ion-icon></span>
                         <span class="navigation__title">Text Editor</span>
                     </a>

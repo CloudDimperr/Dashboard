@@ -74,9 +74,10 @@
                         <canvas id="myChart2"></canvas>
                     </div>
                 </div>
-                <div class="main__gallerybox">
+                <div class="<?= base_url();?>Galeri">
                     <a href="galeri.html">
                         <div class="main__gbox"></div>
                     </a>
                 </div>    
             </div>
+        </div>
