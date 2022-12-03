@@ -37,6 +37,48 @@
                                 foreach ( $dataBarang as $row ) : 
                             ?>
                                 <tr>
+                                <td><input type="checkbox"></td>
+                                <td><?= $row->kode; ?></td>
+                                <td><?= $row->nama; ?></td>
+                                <td><?= $row->bahan; ?></td>
+                                <td><?= $row->jumlah; ?></td>
+                                <td><span class="dataitem__img"><img src="<?= base_url();?>/public/assets/<?= $row->gambar; ?>"></span></td>
+                                <td><?= $row->keterangan; ?></td>
+                                <td>
+                                    <a href="<?= base_url(); ?>Databarang/EditBarang/<?= $row->id ?>">
+                                        <span class="dataitem__editicon"><ion-icon name="create-outline"></ion-icon></span>
+                                    </a>  
+                                    <a href="<?= base_url(); ?>Databarang/HapusBarang/<?= $row->id ?>">
+                                        <span class="dataitem__deleteicon"><ion-icon name="trash-outline"></ion-icon></span>
+                                    </a>
+                                </td>
+                                </tr>
+                            <?php 
+                                // $i += 1;
+                                endforeach; 
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dataitem__details">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>No</td>
+                                <td>Kode</td>
+                                <td>Nama</td>
+                                <td>Bahan/Merk</td>
+                                <td>Jumlah</td>
+                                <td>Gambar</td>
+                                <td>Keterangan</td>
+                                <td>Opsi</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                                foreach ( $dataBarang as $row ) : 
+                            ?>
+                                <tr>
                                 <td><?= $i ?></td>
                                 <td><?= $row->kode; ?></td>
                                 <td><?= $row->nama; ?></td>
@@ -46,7 +88,7 @@
                                 <td><?= $row->keterangan; ?></td>
                                 <td>
                                     <a href="<?= base_url(); ?>Databarang/EditBarang/<?= $row->id ?>">
-                                        <span class="dataitem__editicon"><ion-icon name="settings-outline"></ion-icon></span>
+                                        <span class="dataitem__editicon"><ion-icon name="create-outline"></ion-icon></span>
                                     </a>  
                                     <a href="<?= base_url(); ?>Databarang/HapusBarang/<?= $row->id ?>">
                                         <span class="dataitem__deleteicon"><ion-icon name="trash-outline"></ion-icon></span>

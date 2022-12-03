@@ -73,21 +73,16 @@ body {
 
 .navigation__item:nth-child(1) {
     position: relative;
-    pointer-events: none;
     background: #2B6FA8;
     height: 40px;
     border-radius: 0;
 }
 
 .navigation__item:nth-child(2) {
-    margin-bottom: 10px;
-}
-
-.navigation__item:nth-child(3) {
     pointer-events: none;
 }
 
-.navigation__item:nth-child(6) {
+.navigation__item:nth-child(7) {
     pointer-events: none;
 }
 
@@ -149,7 +144,6 @@ img {
     background: var(--darkblue);
     width: 100%;
     height: 50px;
-    margin-top: -10px;
     padding-top: 15px;
     padding-left: 20px;
     color: var(--lightblue);
@@ -157,8 +151,10 @@ img {
 
 .navigation__mainmenu--active {
     background: var(--darkblue);
+    width: (100% - 60px);
+    height: 50px;
     padding-top: 5px;
-    padding-left: 80px;
+    padding-left: 60px;
     color: var(--lightblue);
 }
 
@@ -173,8 +169,10 @@ img {
 
 .navigation__menusignout--active {
     background: var(--darkblue);
+    width: (100% - 60px);
+    height: 50px;
     padding-top: 5px;
-    padding-left: 80px;
+    padding-left: 60px;
     color: var(--lightblue);
 }
 
@@ -193,12 +191,14 @@ img {
 }
 
 .topbar {
+    position: fixed;
+    z-index: 1;
     width: 100%;
     height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--blue);
+    background-color: var(--white);
     padding: 0 10px;
 }
 
@@ -210,19 +210,35 @@ img {
     justify-content: center;
     align-items: center;
     font-size: 1.8em;
-    color: var(--white);
+    color: var(--regular);
     left: -8px;
+    top: 4px;
     cursor: pointer;
 }
 
+.notif {
+    position: fixed;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    top: 14px;
+    right: 70px;
+    font-size: 1.5em;
+    font-weight: 1000;
+}
+
 .admin__btn {
-    position: relative;
+    position: fixed;
+    z-index: 1;
     width: 80px;
     height: 30px;
     background: var(--regular);
     border-radius: 4px;
     color: var(--white);
     cursor: pointer;
+    top: 10px;
+    right: 10px;
 }
 
 .admin__btn:hover {
@@ -248,165 +264,258 @@ img {
     padding-left: 8px;
 }
 
+.dashboard__title {
+    color: var(--hoverblue);
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 2em;
+    font-weight: 1000;
+}
+
 .card {
     position: relative;
     width: 100%;
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
+
 
 .card__good {
     position: relative;
-    background: var(--baik);
+    flex: 1 0 20%;
+    background: var(--white);
     padding: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.20);
+}
+
+.card__good a {
+    text-decoration: none;
 }
 
 .card__bad {
     position: relative;
-    background: var(--krgbaik);
+    flex: 1 0 20%;
+    background: var(--white);
     padding: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.20);
+}
+
+.card__bad a {
+    text-decoration: none;
 }
 
 .card__damage {
     position: relative;
-    background: var(--rusak);
+    flex: 1 0 20%;
+    background: var(--white);
     padding: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.20);
+}
+
+.card__damage a {
+    text-decoration: none;
 }
 
 .card__lost {
     position: relative;
-    background: var(--hilang);
+    flex: 1 0 20%;
+    background: var(--white);
     padding: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.20);
+}
+
+.card__lost a {
+    text-decoration: none;
 }
 
 .card__item {
     position: relative;
-    background: var(--barang);
+    flex: 1 0 20%;
+    background: var(--white);
     padding: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.20);
+}
+
+.card__item a {
+    text-decoration: none;
 }
 
 .card__goodrate {
     position: relative;
     font-weight: 500;
     font-size: 2.5em;
-    color: var(--iconbaik);
+    color: var(--hoverblue);
 }
 
 .card__badrate {
     position: relative;
     font-weight: 500;
     font-size: 2.5em;
-    color: var(--iconkrgbaik);
+    color: var(--hoverblue);
 }
 
 .card__damagerate {
     position: relative;
     font-weight: 500;
     font-size: 2.5em;
-    color: var(--iconrusak);
+    color: var(--hoverblue);
 }
 
 .card__lostrate {
     position: relative;
     font-weight: 500;
     font-size: 2.5em;
-    color: var(--iconhilang);
+    color: var(--hoverblue);
 }
 
 .card__itemrate {
     position: relative;
     font-weight: 500;
     font-size: 2.5em;
-    color: var(--iconbarang);
+    color: var(--hoverblue);
 }
 
 .card__goodicon {
-    font-size: 3.5em;
-    color: var(--iconbaik);
+    font-size: 2.5em;
+    color: var(--hoverblue);
 }
 
 .card__badicon {
-    font-size: 3.5em;
-    color: var(--iconkrgbaik);
+    font-size: 2.5em;
+    color: var(--hoverblue);
 }
 
 .card__damageicon {
-    font-size: 3.5em;
-    color: var(--iconrusak);
+    font-size: 2.5em;
+    color: var(--hoverblue);
 }
 
 .card__losticon {
-    font-size: 3.5em;
-    color: var(--iconhilang);
+    font-size: 2.5em;
+    color: var(--hoverblue);
 }
 
 .card__itemicon {
-    font-size: 3.5em;
-    color: var(--iconbarang);
+    font-size: 2.5em;
+    color: var(--hoverblue);
 }
 
-.card__name {
-    color: var(--black);
-    font-weight: medium;
+.card__goodname {
+    color: var(--hoverblue);
+    font-weight: 500;
     font-size: 1.1em;
     margin-top: 5px;
 }
 
-.card .card__good:hover .card__goodrate,
-.card .card__good:hover .card__name,
-.card .card__good:hover .card__goodicon {
-    color: var(--white);
+.card__badname {
+    color: var(--hoverblue);
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-top: 5px;
 }
 
-.card .card__bad:hover .card__badrate,
-.card .card__bad:hover .card__name,
-.card .card__bad:hover .card__badicon {
-    color: var(--white);
+.card__damagename {
+    color: var(--hoverblue);
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-top: 5px;
 }
 
-.card .card__damage:hover .card__damagerate,
-.card .card__damage:hover .card__name,
-.card .card__damage:hover .card__damageicon {
-    color: var(--white);
+.card__lostname {
+    color: var(--hoverblue);
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-top: 5px;
 }
 
-.card .card__lost:hover .card__lostrate,
-.card .card__lost:hover .card__name,
-.card .card__lost:hover .card__losticon {
-    color: var(--white);
+.card__itemname {
+    color: var(--hoverblue);
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-top: 5px;
 }
 
-.card .card__item:hover .card__itemrate,
-.card .card__item:hover .card__name,
-.card .card__item:hover .card__itemicon {
-    color: var(--white);
+.card__good:hover,
+.card__bad:hover,
+.card__damage:hover,
+.card__lost:hover,
+.card__item:hover {
+    border: 2px var(--hoverblue) solid;
+}
+
+.main__graph {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    min-height: 200px;
+}
+
+.main__graphbox {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+}
+
+.main__graphbox:hover {
+    border: 2px var(--hoverblue) solid;
+}
+
+canvas#myChart2 {
+    height: 100px;
+    width: 100px;
+    margin-left: 40px;
+}
+
+.main__gallerybox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    min-height: 200px;
+    cursor: pointer;
+}
+
+.main__gbox {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    width: 940px;
+    height: 300px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+}
+
+.main__gbox:hover {
+    border: 2px var(--hoverblue) solid;
 }
 
 /* data barang */
@@ -414,8 +523,10 @@ img {
 .dataitem__title {
     position: relative;
     padding-left: 20px;
+    top: 40px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    color: var(--hoverblue);
 }
 
 .dataitem__fiture {
@@ -428,34 +539,35 @@ img {
 }
 
 .dataitem__add {
-    background: var(--krgbaik);
+    background: var(--hoverblue);
     width: 160px;
     height: 30px;
     color: var(--white);
-    font-weight: bold;
+    font-weight: 500;
     margin-left: 20px;
     padding-top: 5px;
     padding-left: 12px;
-    border-color: #058A02;
+    border-color: var(--hoverblue);
     border-radius: 5px;
     cursor: pointer;
 }
 
 .dataitem__add:hover,
 .dataitem__add--hovered {
-    background-color: #17d714;   
+    background-color: rgb(189, 185, 185);   
 }
 
 .dataitem__adddetails {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
 }
 
 .dataitem__add ion-icon {
     position: absolute;
     font-size: 1.2em;
-    top: 143px;
+    top: 113px;
     left: 165px;
+    color: var(--white);
 }
 
 .dataitem__search {
@@ -518,8 +630,7 @@ img {
 }
 
 .dataitem__details table tbody tr:hover {
-    background: var(--blue);
-    color: var(--white);
+    background: rgb(237, 236, 236);
 }
 
 .dataitem__details table tr td {
@@ -527,37 +638,43 @@ img {
     text-align: center;
 }
 
+.dataitem__details table tr td input{
+    accent-color: var(--hoverblue);
+}
+
 .dataitem__details table tbody tr td a {
     text-decoration: none;
     color: var(--white);
+    margin-left: 2px;
 }
 
 .dataitem__editicon {
-    background: var(--rusak);
+    background: var(--hoverblue);
     border-radius: 5px;
-    padding: 5px;
-    padding-top: 8px;
-    color: var(--black);
+    padding: 2px;
+    padding-left: 4px;
+    padding-top: 4px;
+    color: var(--white);
     cursor: pointer;
 }
 
 .dataitem__editicon:hover,
 .dataitem__editicon--hovered {
-    background-color: #dcb00e;
+    background-color: rgb(145, 146, 149);
 }
 
 .dataitem__deleteicon {
-    background: var(--hilang);
+    /* background: var(--hoverblue); */
     border-radius: 5px;
-    padding: 5px;
-    padding-top: 8px;
-    color: var(--black);
+    padding: 2px;
+    padding-top: 4px;
+    color: var(--hoverblue);
     cursor: pointer;
 }
 
 .dataitem__deleteicon:hover,
 .dataitem__deleteicon--hovered {
-    background-color: #d10505;
+    background-color: rgb(145, 146, 149);
 }
 
 .popup {
@@ -824,25 +941,24 @@ img {
 
 /* sign in */
 
-.signin__container {
-    height: 570.4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-}
-
-.signin__image__logo {
+.logo {
+    display: block;
+    margin-left: 580px;
+    margin-top: 20px;
+    margin-bottom: -150px;
     width: 140px;
     height: 140px;
-    margin: 30px 0 40px 0;
 }
 
 .signin__card {
     background: var(--blue);
-    padding: 20px;
+    position: relative;
+    top: 180px;
+    left: 500px;
     width: 300px;
     height: 340px;
+    padding: 20px;
+    display: block;
     border-radius: 5px;
     box-shadow: 0 5px 30px rgba(0,0,0,0.30);
 }
@@ -857,15 +973,6 @@ img {
 .signin__uname {
     margin-bottom: 5px;
     color: var(--white);
-}
-
-.signin__uname label input {
-    width: 260px;
-    padding: 5px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-color: var(--white);
 }
 
 .signin__uname label input {
@@ -977,7 +1084,7 @@ img {
 /* admin profile */
 
 .admin__profile {
-    margin-top: 100px;
+    margin-top: 140px;
 }
 
 .admin__title {
@@ -1016,11 +1123,6 @@ img {
     border-radius: 5px;
 }
 
-.admin__profileset:hover {
-    background-color: var(--barang);
-    color: var(--white);
-}
-
 .admin__profilesettitle {
     margin-top: 10px;
     margin-left: 10px;
@@ -1032,11 +1134,19 @@ img {
     margin-top: 10px;
     margin-left: 10px;
     font-size: 200;
+}
+
+.admin__name--black {
     color: var(--black);
+}
+
+.admin__name--gray {
+    color: gray;
 }
 
 .admin__nameedit {
     margin-top: -80px;
+    
 }
 
 .admin__nameedit ion-icon {
@@ -1046,10 +1156,6 @@ img {
     margin-top: 24px;
     margin-left: 270px;
     cursor: pointer;
-}
-
-.admin__nameedit ion-icon:hover {
-    color: var(--white);
 }
 
 .admin__nameeditpopup {
@@ -1137,11 +1243,6 @@ img {
     border-radius: 5px;
 }
 
-.admin__security:hover {
-    background-color: var(--barang);
-    color: var(--white);
-}
-
 .admin__securitytitle {
     margin-top: 10px;
     margin-left: 10px;
@@ -1153,11 +1254,14 @@ img {
     margin-top: 10px;
     margin-left: 10px;
     font-size: 200;
+}
+
+.admin__password--black {
     color: var(--black);
 }
 
-.admin__password {
-    color: var(--black);
+.admin__password--gray {
+    color: gray;
 }
 
 .admin__passwordedit {
@@ -1172,10 +1276,6 @@ img {
     margin-top: 24px;
     margin-left: 270px;
     cursor: pointer;
-}
-
-.admin__passwordedit ion-icon:hover {
-    color: var(--white);
 }
 
 .admin__pweditpopup {
@@ -1270,4 +1370,24 @@ img {
 .admin__pweditsave a {
     text-decoration: none;
     color: var(--white);
+}
+
+/* Galeri */
+
+.galeri__title {
+    color: var(--hoverblue);
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 2em;
+    font-weight: 1000;
+}
+
+/* Template */
+
+.texteditor__title {
+    color: var(--hoverblue);
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 2em;
+    font-weight: 1000;
 }
