@@ -226,7 +226,7 @@ img {
     width: 60px;
     height: 60px;
     cursor: pointer;
-    top: 14px;
+    top: 8px;
     right: 70px;
     font-size: 1.5em;
     font-weight: 1000;
@@ -241,7 +241,7 @@ img {
     border-radius: 4px;
     color: var(--white);
     cursor: pointer;
-    top: 10px;
+    top: 5px;
     right: 10px;
 }
 
@@ -428,35 +428,35 @@ img {
 
 .card__goodname {
     color: var(--hoverblue);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.1em;
     margin-top: 5px;
 }
 
 .card__badname {
     color: var(--hoverblue);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.1em;
     margin-top: 5px;
 }
 
 .card__damagename {
     color: var(--hoverblue);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.1em;
     margin-top: 5px;
 }
 
 .card__lostname {
     color: var(--hoverblue);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.1em;
     margin-top: 5px;
 }
 
 .card__itemname {
     color: var(--hoverblue);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.1em;
     margin-top: 5px;
 }
@@ -492,6 +492,13 @@ img {
     border: 2px var(--hoverblue) solid;
 }
 
+.main__graphboxtitle {
+    color: var(--hoverblue);
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
 canvas#myChart2 {
     height: 100px;
     width: 100px;
@@ -508,6 +515,10 @@ canvas#myChart2 {
     cursor: pointer;
 }
 
+.main__gallerybox a {
+    text-decoration: none;
+}
+
 .main__gbox {
     position: relative;
     background-color: #fff;
@@ -520,6 +531,26 @@ canvas#myChart2 {
 
 .main__gbox:hover {
     border: 2px var(--hoverblue) solid;
+}
+
+.main__galleryboxtitle {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--regular);
+    text-align: center;
+}
+
+.main__galleryboximg {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.main__galleryboximg img {
+    border-radius: 5px;
+    width: 180px;
+    height: 180px;
 }
 
 /* data barang */
@@ -945,11 +976,13 @@ canvas#myChart2 {
 
 /* sign in */
 
-.logo {
-    display: block;
-    margin-left: 580px;
+.signin__image {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
-    margin-bottom: -150px;
+}
+
+.signin__image img {
     width: 140px;
     height: 140px;
 }
@@ -957,10 +990,10 @@ canvas#myChart2 {
 .signin__card {
     background: var(--blue);
     position: relative;
-    top: 180px;
+    top: 30px;
     left: 500px;
     width: 300px;
-    height: 340px;
+    height: 320px;
     padding: 20px;
     display: block;
     border-radius: 5px;
@@ -1089,42 +1122,73 @@ canvas#myChart2 {
 
 .admin__profile {
     margin-top: 140px;
+    display: flex;
+    justify-content: center;
 }
 
 .admin__title {
     margin-top: -80px;
-    margin-left: 30px;
+    margin-left: 40px;
     font-size: 2em;
     font-weight: 700;
+    color: var(--hoverblue);
+}
+
+.admin__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hoverblue);
+    width: 80%;
+    height: 400px;
+    margin-right: 100px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.30);
+    border-radius: 8px;
 }
 
 .admin__avatar {
-    margin-left: 130px;
     width: 200px;
     height: 100px;
-    margin-top: 30px;
-}
-
-.admin__avatartitle {
-    margin-top: 10px;
-    margin-left: 25px;
-    font-size: medium;
-    font-weight: 500;
 }
 
 .admin__avatarimg {
-    margin-left: 10px;
     cursor: pointer;
     font-size: 5em;
+    color: var(--hoverblue);
+    background-color: var(--white);
+    width: 50%;
+    height: 100px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.20);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.admin__avatarimg:hover {
+    background: #e3e3e3;
 }
 
 .admin__profileset {
     width: 300px;
     height: 80px;
     margin-top: 20px;
-    margin-left: 30px;
-    border: 1px rgb(206, 203, 203) solid;
-    border-radius: 5px;
+    background-color: var(--white);
+    width: 300px;
+    height: 80px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.20);
+    border-radius: 8px;
+}
+
+.admin__profileset:hover {
+    background: #e3e3e3;
+}
+
+.admin__profileset a {
+    text-decoration: none;
 }
 
 .admin__profilesettitle {
@@ -1132,6 +1196,7 @@ canvas#myChart2 {
     margin-left: 10px;
     font-size: medium;
     font-weight: 500;
+    color: var(--black);
 }
 
 .admin__name {
@@ -1154,7 +1219,7 @@ canvas#myChart2 {
 }
 
 .admin__nameedit ion-icon {
-    color: var(--black);
+    color: var(--hoverblue);
     padding: 4px;
     border-radius: 5px;
     margin-top: 24px;
@@ -1162,10 +1227,11 @@ canvas#myChart2 {
     cursor: pointer;
 }
 
-.admin__nameeditpopup {
-    position: fixed;
-    top: 160px;
-    left: 450px;
+.admin__nameeditcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 450px;
     height: 220px;
     padding-top: 10px;
@@ -1180,12 +1246,7 @@ canvas#myChart2 {
     margin-left: 20px;
     font-size: 1.5em;
     font-weight: 700;
-}
-
-.admin__nameeditdetails {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    color: var(--black);
 }
 
 .admin__nameeditdetails label input {
@@ -1195,11 +1256,16 @@ canvas#myChart2 {
     box-sizing: border-box;
 }
 
+.admin__nameeditoption {
+    display: flex;
+    justify-content: space-between;
+    gap: 250px;
+    margin-top: 20px;
+}
+
 .admin__nameeditcancel {
     width: 70px;
     height: 30px;
-    margin-top: 10px;
-    margin-left: 30px;
     padding-top: 5px;
     padding-left: 15px;
     border-radius: 5px;
@@ -1219,18 +1285,16 @@ canvas#myChart2 {
 .admin__nameeditsave {
     width: 70px;
     height: 30px;
-    margin-top: -30px;
-    margin-left: 320px;
     padding-top: 5px;
     padding-left: 8px;
     border-radius: 5px;
     color: var(--white);
-    background: var(--blue);
+    background: var(--hoverblue);
     cursor: pointer;
 }
 
 .admin__nameeditsave:hover {
-    background: var(--hoverblue);
+    background: var(--lightblue);
 }
 
 .admin__nameeditsave a {
@@ -1239,12 +1303,20 @@ canvas#myChart2 {
 }
 
 .admin__security {
+    margin-top: 20px;
+    background-color: var(--white);
     width: 300px;
     height: 80px;
-    margin-top: 20px;
-    margin-left: 30px;
-    border: 1px rgb(206, 203, 203) solid;
-    border-radius: 5px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.20);
+    border-radius: 8px;
+}
+
+.admin__security:hover {
+    background: #e3e3e3;
+}
+
+.admin__security a {
+    text-decoration: none;
 }
 
 .admin__securitytitle {
@@ -1252,6 +1324,7 @@ canvas#myChart2 {
     margin-left: 10px;
     font-size: medium;
     font-weight: 500;
+    color: var(--black);
 }
 
 .admin__password {
@@ -1274,7 +1347,7 @@ canvas#myChart2 {
 }
 
 .admin__passwordedit ion-icon {
-    color: var(--black);
+    color: var(--hoverblue);
     padding: 4px;
     border-radius: 5px;
     margin-top: 24px;
@@ -1282,22 +1355,19 @@ canvas#myChart2 {
     cursor: pointer;
 }
 
-.admin__pweditpopup {
-    position: fixed;
-    top: 130px;
-    left: 450px;
+.admin__pweditcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 450px;
     height: 310px;
-    padding-top: 10px;
-    padding-left: 10px;
     box-shadow: 0 5px 30px rgba(0,0,0,0.30);
     background: var(--white);
     border-radius: 5px;
 }
 
 .admin__pwedittitle {
-    margin-top: 10px;
-    margin-left: 20px;
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -1305,7 +1375,6 @@ canvas#myChart2 {
 .admin__pweditchange {
     line-height: 0.8em;
     margin-top: 10px;
-    margin-left: 30px;
 }
 
 .admin__pweditold {
@@ -1333,11 +1402,16 @@ canvas#myChart2 {
     box-sizing: border-box;
 }
 
+.admin__pweditoption {
+    display: flex;
+    justify-content: space-between;
+    gap: 220px;
+    margin-top: 10px;
+}
+
 .admin__pweditcancel {
     width: 70px;
     height: 30px;
-    margin-top: 10px;
-    margin-left: 30px;
     padding-top: 5px;
     padding-left: 15px;
     border-radius: 5px;
@@ -1357,18 +1431,16 @@ canvas#myChart2 {
 .admin__pweditsave {
     width: 70px;
     height: 30px;
-    margin-top: -30px;
-    margin-left: 320px;
     padding-top: 5px;
     padding-left: 8px;
     border-radius: 5px;
     color: var(--white);
-    background: var(--blue);
+    background: var(--hoverblue);
     cursor: pointer;
 }
 
 .admin__pweditsave:hover {
-    background: var(--hoverblue);
+    background: var(--lightblue);
 }
 
 .admin__pweditsave a {
@@ -1378,7 +1450,7 @@ canvas#myChart2 {
 
 /* Galeri */
 
-.galerry__container {
+.gallery__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1387,19 +1459,19 @@ canvas#myChart2 {
     margin: 50px 20px 0px 20px;
 }
 
-.galerry__header {
+.gallery__header {
     width: 60%;
     padding-bottom: 19px;
 }
 
-.galerry__topname {
+.gallery__topname {
     font-size: 2rem;
     font-weight: bolder;
     border-bottom: 3px solid var(--regular);
     padding-bottom: 10px;
 }
 
-.galerry__topname span {
+.gallery__topname span {
     font-weight: 200;
 }
 
@@ -1434,6 +1506,7 @@ canvas#myChart2 {
     background: var(--regular);
     border-radius: 5px;
     padding: 10px 30px;
+    border: none;
 }
 
 .gallery__next span{
@@ -1444,26 +1517,30 @@ canvas#myChart2 {
 
 .gallery__next:hover {
     cursor: pointer;
+    background: var(--lightblue);
 }
 
-.galerry__gotoup {
+.gallery__gotoup {
     background-color: var(--regular);
     position: fixed;
     width: 50px;
     height: 50px;
     bottom: 40px;
     right: 50px;
-    
     text-decoration: none;
     text-align: center;
     line-height: 50px;
     border-radius: 5px;
-    
+}
+
+.gallery__gotoup:hover {
+    background: var(--lightblue);
 }
 
 .fa-arrow-up {
     color: var(--white);
-    font-size: 16px;
+    font-size: 2em;
+    margin-top: 8px;
 }
 
 /* Template */

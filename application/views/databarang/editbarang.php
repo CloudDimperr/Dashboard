@@ -1,4 +1,10 @@
+            <div class="texteditor">
+                            <div class="texteditor__title">Edit Data Barang</div>
+                        </div>
+                    </div>
+                </div>
 
+<!-- 
             <div class="dataitem">
                 <div class="dataitem__header">
                     <div class="dataitem__title">
@@ -154,4 +160,4 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->

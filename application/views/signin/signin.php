@@ -1,6 +1,6 @@
 
     <div class="signin__container">
-        <span class="signin__image"><img src="<?= base_url();?>/public/assets/okif.png" alt="logo okif" class="signin__image__logo"></span>
+        <div class="signin__image"><img src="<?= base_url();?>/public/assets/okif.png" alt="logo okif"></div>
         <div class="signin__card">
             <div class="signin__title">APLIKASI<br>INVENTARIS OKIF FT-UH</div>
             <div class="signin__uname">

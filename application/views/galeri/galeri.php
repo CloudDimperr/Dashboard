@@ -1,6 +1,6 @@
-            <div class="galerry__container">
-                <div class="galerry__header">
-                    <h3 class="galerry__topname"> Photo <span>Gallery</span></h3>
+            <div class="gallery__container">
+                <div class="gallery__header">
+                    <h3 class="gallery__topname"> Photo <span>Gallery</span></h3>
                 </div>
 
                 <div class="photo__wrapper">
@@ -36,4 +36,5 @@
             </form>
         </div>
 
-        <a href="#" class="galerry__gotoup"> <i class="fa-solid fa-arrow-up"></i> </a>
+        <a href="#" class="gallery__gotoup"> <i class="fa-solid fa-arrow-up"></i> </a>
+    </div>

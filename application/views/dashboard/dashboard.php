@@ -68,16 +68,35 @@
                 </div>
                 <div class="main__graph">
                     <div class="main__graphbox">
+                        <div class="main__graphboxtitle">Bar Chart</div>
                         <canvas id="myChart"></canvas>
                     </div>
                     <div class="main__graphbox">
+                        <div class="main__graphboxtitle">Doughnut Chart</div>
                         <canvas id="myChart2"></canvas>
                     </div>
                 </div>
-                <div class="<?= base_url();?>Galeri">
-                    <a href="galeri.html">
-                        <div class="main__gbox"></div>
+                <div class="main__gallerybox">
+                    <a href="<?= base_url();?>Galeri">
+                        <div class="main__gbox">
+                            <div class="main__galleryboxtitle">Gallery</div>
+                            <div class="main__galleryboximg">
+                                <div class="main__galleryboximg1">
+                                    <img src="<?= base_url(); ?>public/assets/4.png" alt="photo">
+                                </div>
+                                <div class="main__galleryboximg2">
+                                    <img src="<?= base_url(); ?>public/assets/1.png" alt="photo">
+                                </div>
+                                <div class="main__galleryboximg3">
+                                    <img src="<?= base_url(); ?>public/assets/2.png" alt="photo">
+                                </div>
+                                <div class="main__galleryboximg4">
+                                    <img src="<?= base_url(); ?>public/assets/3.png" alt="photo">
+                                </div>
+                            </div>
+                        </div>
                     </a>
                 </div>    
             </div>
         </div>
+    </div>
