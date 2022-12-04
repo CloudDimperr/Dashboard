@@ -3,7 +3,7 @@
             <ul class="navigation__list navigation__list--hovered">
                 <li class="navigation__item navigation__item--hovered">
                     <a href="<?= base_url();?>Dashboard">
-                        <span><img src="assets/okif.png"></span>
+                        <span><img src="<?= base_url();?>public/assets/okif.png"></span>
                         <span class="navigation__header">INVENTARIS OKIF FT-UH</span>
                     </a>
                 </li>

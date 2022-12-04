@@ -1,5 +1,9 @@
 /* navigation */
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Chakra Petch', sans-serif;
     padding: 0;
@@ -1374,12 +1378,92 @@ canvas#myChart2 {
 
 /* Galeri */
 
-.galeri__title {
-    color: var(--hoverblue);
-    margin-top: 50px;
-    margin-left: 20px;
-    font-size: 2em;
-    font-weight: 1000;
+.galerry__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 20px 0px 20px;
+}
+
+.galerry__header {
+    width: 60%;
+    padding-bottom: 19px;
+}
+
+.galerry__topname {
+    font-size: 2rem;
+    font-weight: bolder;
+    border-bottom: 3px solid var(--regular);
+    padding-bottom: 10px;
+}
+
+.galerry__topname span {
+    font-weight: 200;
+}
+
+.gallery__photo {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out; 
+}
+
+.gallery__photo:hover {
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+
+.photo__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery__item {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.gallery__next{
+    margin: 40px 0px 40px 0px;
+    background: var(--regular);
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.gallery__next span{
+    font-size: 1.2em;
+    color: var(--white);
+    font-weight: bolder;
+}
+
+.gallery__next:hover {
+    cursor: pointer;
+}
+
+.galerry__gotoup {
+    background-color: var(--regular);
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    
+}
+
+.fa-arrow-up {
+    color: var(--white);
+    font-size: 16px;
 }
 
 /* Template */

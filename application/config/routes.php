@@ -69,5 +69,8 @@ $route['Databarang/EditBarang/(:num)'] = "Databarang/editbarang/$1";
 $route['Databarang/TambahBarang/']['post'] = "Databarang/tambahbarang";
 $route['Databarang/HapusBarang/(:num)']['delete'] = "Databarang/hapusbarang/$1";
 
+// Galeri
+$route['Galeri'] = "Galeri/index";
+
 // Sign in
-$route['Login'] = "signin/index";
+$route['Login'] = "Signin/index";
