@@ -1466,7 +1466,8 @@ canvas#myChart2 {
 
 .gallery__topname {
     font-size: 2rem;
-    font-weight: bolder;
+    font-weight: 700;
+    color: var(--regular);
     border-bottom: 3px solid var(--regular);
     padding-bottom: 10px;
 }
@@ -1543,12 +1544,166 @@ canvas#myChart2 {
     margin-top: 8px;
 }
 
-/* Template */
+/* Template FORM & TEXT EDITOR */
+a {
+    text-decoration: none;
+}
 
-.texteditor__title {
+.template__container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 65px 20px 0px 20px;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.template__header {
+    width: 35%;
+    padding-bottom: 19px;
+}
+
+.template__topname {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--regular);
+    border-bottom: 3px solid var(--regular);
+    padding-bottom: 10px;
+    margin-left: 4px;
+}
+
+.template__topname span {
+    font-weight: 200;
+}
+
+.template__menu {
+    position: relative;
+    flex: 1 0 20%;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.20);
+}
+
+.template__icon {
+    font-size: 2.5em;
     color: var(--hoverblue);
-    margin-top: 50px;
-    margin-left: 20px;
-    font-size: 2em;
-    font-weight: 1000;
+}
+
+.template__title {
+    font-size: 2.5em;
+    color: var(--hoverblue);
+}
+
+
+.template__overview {
+    color: var(--hoverblue);
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.template__menu:hover {
+    border: 2px var(--hoverblue) solid;
+}
+
+/* FORM */
+
+.form__container {
+    border: 3px solid var(--regular);
+    width: 69%;
+    margin: auto;
+    margin-top: 89px;
+    margin-bottom: 75px;
+    background-color: #f1f1f1;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+}
+
+.form__header {
+    font-size: 45px;
+    font-weight: 400;
+    margin-left: 47px;
+    margin-top: 27px;
+    margin-bottom: 35px;
+    width: 80px;
+
+    display: inline-block;
+    padding: 8px 0px;
+    border-bottom: 4px solid var(--regular);
+    line-height: 1em;
+    text-decoration: none;
+}
+
+.input__wrapper {
+    margin-left: 47px;
+    margin-bottom: 35px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form__input{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.form__input--dropdown{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    gap: 10px;
+}
+
+.form__input--date{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    gap: 10px;
+}
+
+.form__textarea--disable {
+    resize: none;
+}
+
+.form__textarea--checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.form__input--button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.form__input--button button {
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 5px;
+    width: 20%;
+}
+
+.form__button--confirm{
+    color: var(--white);
+    background-color: var(--regular);
+    border-radius: 5px;
+    border: 0px;
+}
+
+.form__button--cancel{
+    color: var(--regular);
+    border: 2px solid var(--regular);
 }

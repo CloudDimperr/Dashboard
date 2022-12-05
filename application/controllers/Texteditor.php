@@ -20,6 +20,28 @@ class Texteditor extends CI_Controller {
 	 */
 	public function index()
 	{
+		$data['title'] = 'TEMPLATE MENU';
+
+		$this->load->helper('url');
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidetopbar');
+		$this->load->view('texteditor/index', $data);
+        $this->load->view('templates/footer');
+	}
+
+	public function form()
+	{
+		$data['title'] = 'FORM';
+
+		$this->load->helper('url');
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidetopbar');
+		$this->load->view('texteditor/form', $data);
+        $this->load->view('templates/footer');
+	}
+
+	public function texteditor()
+	{
 		$data['title'] = 'TEXT EDITOR';
 
 		$this->load->helper('url');

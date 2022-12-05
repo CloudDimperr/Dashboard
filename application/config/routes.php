@@ -72,5 +72,10 @@ $route['Databarang/HapusBarang/(:num)']['delete'] = "Databarang/hapusbarang/$1";
 // Galeri
 $route['Galeri'] = "Galeri/index";
 
+// Template
+$route['Template'] = 'Texteditor/index';
+$route['Template/Form'] = 'Texteditor/form';
+$route['Template/TextEditor'] = 'Texteditor/texteditor';
+
 // Sign in
 $route['Login'] = "Signin/index";
