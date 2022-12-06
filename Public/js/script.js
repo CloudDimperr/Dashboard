@@ -4,11 +4,32 @@ let main = document.querySelector('.main');
 let mainmenu = document.querySelector('.navigation__mainmenu');
 let menusignout = document.querySelector('.navigation__menusignout');
 
+let box = document.getElementById('box');
+let down = false;
+let notif = document.getElementById('notif');
+
 toggle.onclick = function(){
     navigation.classList.toggle('navigation--active');
     main.classList.toggle('main--active');
     mainmenu.classList.toggle('navigation__mainmenu--active');
     menusignout.classList.toggle('navigation__menusignout--active');
+}
+
+notif.onclick = function() {
+  if (down) {
+    box.style.height = '0%';
+    box.style.width = '0%';
+    box.style.opacity = '0';
+    box.style.right = '-95px';
+    down = false;
+  } else
+  {
+    box.style.height = 'auto';
+    box.style.width = '300px';
+    box.style.opacity = '1';
+    box.style.right = '293px';
+    down = true;
+  }
 }
 
 let list = document.querySelectorAll('.navigation__item');

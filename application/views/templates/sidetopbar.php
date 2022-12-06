@@ -58,9 +58,49 @@
                     </div>
                 </div>
                 <div class="topbar__right">
-                    <div class="notif">
-                        <ion-icon name="notifications-outline"></ion-icon>
+                    <div class="notif__icon" id="notif">
+                        <ion-icon name="notifications-outline"></ion-icon> <span>7</span>
                     </div>
+
+                    <div class="notif__box" id="box">
+                        <h2 class="notif__title">Notification <span>7</span></h2>
+                        <div class="notif__item">
+                            <img src="<?= base_url(); ?>public/assets/user1.png">
+                            <div class="notif__text">
+                                <h4>Dimas Permana</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <span>2</span>
+                        </div>
+
+                        <div class="notif__item">
+                            <img src="<?= base_url(); ?>public/assets/user4.png">
+                            <div class="notif__text">
+                                <h4>Nabilah Az zahra</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <span>3</span>
+                        </div>
+
+                        <div class="notif__item">
+                            <img src="<?= base_url(); ?>public/assets/user2.png">
+                            <div class="notif__text">
+                                <h4>Muhammad Arfan Bahrun</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <span>1</span>
+                        </div>
+
+                        <div class="notif__item">
+                            <img src="<?= base_url(); ?>public/assets/user3.png">
+                            <div class="notif__text">
+                                <h4>Muhammad Rezky</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <span>1</span>
+                        </div>
+                    </div>
+
                     <div class="admin__btn">
                         <a href="<?= base_url();?>Admin" class="admin__btndetails">
                             <ion-icon name="person-circle-outline"></ion-icon> 
