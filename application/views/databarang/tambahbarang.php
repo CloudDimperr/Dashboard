@@ -1,8 +1,8 @@
-                    <div class="texteditor">
-                                    <div class="texteditor__title">Tambah Data Barang</div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="additem__card">
+                        <div class="additem__title">Tambah Data Barang</div>
+                    </div>
+                </div>
+            </div>
 <!-- 
             <div class="dataitem">
                 <div class="dataitem__header">

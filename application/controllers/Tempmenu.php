@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Texteditor extends CI_Controller {
+class Tempmenu extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,14 +18,14 @@ class Texteditor extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
-	public function index()
+	public function tempmenu()
 	{
 		$data['title'] = 'TEMPLATE MENU';
 
 		$this->load->helper('url');
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidetopbar');
-		$this->load->view('texteditor/index', $data);
+		$this->load->view('tempmenu/tempmenu', $data);
         $this->load->view('templates/footer');
 	}
 
@@ -36,7 +36,7 @@ class Texteditor extends CI_Controller {
 		$this->load->helper('url');
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidetopbar');
-		$this->load->view('texteditor/form', $data);
+		$this->load->view('tempmenu/form', $data);
         $this->load->view('templates/footer');
 	}
 
@@ -47,7 +47,7 @@ class Texteditor extends CI_Controller {
 		$this->load->helper('url');
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidetopbar');
-		$this->load->view('texteditor/texteditor', $data);
+		$this->load->view('tempmenu/texteditor', $data);
         $this->load->view('templates/footer');
 	}
 

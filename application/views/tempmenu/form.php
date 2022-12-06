@@ -11,9 +11,16 @@
                         <input type="text" name="" id="text" placeholder="Input your text...">
                     </div>
 
+                    <!-- Password -->
+                    <div class="form__input">
+                        <label for="password"> PASSWORD</label>
+
+                        <input type="password" name="" id="password" placeholder="Input your password...">
+                    </div>
+
                     <!-- File -->
                     <div class="form__input">
-                        <label for="file"> FILE </label>
+                        <label for="file"> UPLOAD FILE </label>
 
                         <input type="file" name="" id="file">
                     </div>
@@ -24,8 +31,9 @@
 
                         <input type="text" name="dropdown" placeholder="Pilih item" list="listoption">
                         <datalist id="listoption">
-                        <option value="A">
-                        <option value="B">
+                            <option value="A">
+                            <option value="B">
+                            <option value="C">
                         </datalist>
                     </div>
 
@@ -36,19 +44,19 @@
                         <input type="date" name="" id="date">
                     </div>
 
-                    <!-- Option -->
-                    <div class="form__input">
-                        <label for="option"> Option </label>
+                    <!-- Radio -->
+                    <div class="form__input--option">
+                        <label for="radio"> OPTION </label>
 
                         <div class="form__input--radio">
-                            <input type="radio" name="radio" id="option" value="A"> A
-                            <input type="radio" name="radio" id="option" value="B"> B
-                            <input type="radio" name="radio" id="option" value="C"> C
+                            <input type="radio" name="radio" id="radio" value="A"> A
+                            <input type="radio" name="radio" id="radio" value="B"> B
+                            <input type="radio" name="radio" id="radio" value="C"> C
                         </div>
                     </div>
 
                     <!-- checkbox -->
-                    <div class="form__input">
+                    <div class="form__input--option">
                         <label for="checkbox"> CHECKBOX </label>
 
                         <div class="form__input--checkbox">
@@ -60,8 +68,16 @@
 
                     <!-- toggle -->
                     <div class="form__input">
-                        <label for="">TOGGLE</label>
-                        input:toggle
+                        <label for="switch"> TOGGLE SWITCH </label>
+                        <label class="form__input--switch">
+                            <input type="checkbox">
+                            <span class="form__input--switchslider"></span>
+                        </label>
+
+                        <label class="form__input--switch">
+                            <input type="checkbox" checked>
+                            <span class="form__input--switchslider round"></span>
+                        </label>
                     </div>
 
                     <!-- Textarea -->
@@ -80,11 +96,12 @@
                         </textarea>
                     </div>
 
-                    <!-- slider -->
-                    <div class="form__input">
+                    <!-- Slider -->
+                    <div class="form__input--slider">
                         <label for="slider"> SLIDER </label>
 
-                        <input type="range" name="" id="slider">
+                        <input type="range" name="slider" id="slider">
+                        <input type="range" min="1" max="100" value="50" class="form__input--custslider" id="myRange">
                     </div>
 
                     <div class="form__input--button">

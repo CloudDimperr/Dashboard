@@ -6,7 +6,7 @@
                 </div>
 
                 <div class="menu__container">
-                    <a href="<?= base_url(); ?>Texteditor/form">
+                    <a href="<?= base_url(); ?>Tempmenu/form">
                         <div class="template__menu">
                             <div class="template__icon">
                                 <i class="fa-thin fa-square-list"></i>
@@ -21,7 +21,7 @@
                         </div>
                     </a>
         
-                    <a href="#">
+                    <a href="<?= base_url(); ?>Tempmenu/texteditor">
                         <div class="template__menu">
                             <div class="template__icon">
                                 <i class="fa-regular fa-text-size"></i>
