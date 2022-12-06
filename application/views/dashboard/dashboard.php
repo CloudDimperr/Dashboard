@@ -71,7 +71,7 @@
                         <div class="main__graphboxtitle">Bar Chart</div>
                         <canvas id="myChart"></canvas>
                     </div>
-                    <div class="main__graphbox">
+                    <div class="main__graphbox2">
                         <div class="main__graphboxtitle">Doughnut Chart</div>
                         <canvas id="myChart2"></canvas>
                     </div>

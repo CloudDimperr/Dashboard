@@ -1,8 +1,8 @@
-            <div class="texteditor">
-                            <div class="texteditor__title">Edit Data Barang</div>
-                        </div>
+                    <div class="edititem__card">
+                        <div class="edititem__title">Edit Data Barang</div>
                     </div>
                 </div>
+            </div>
 
 <!-- 
             <div class="dataitem">

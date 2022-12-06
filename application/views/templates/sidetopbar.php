@@ -31,9 +31,9 @@
                     </a>
                 </li>
                 <li class="navigation__item">
-                    <a href="<?= base_url();?>Texteditor" class="navigation__details navigation__details--hovered">
+                    <a href="<?= base_url();?>Tempmenu" class="navigation__details navigation__details--hovered">
                         <span class="navigation__icon"><ion-icon name="document-text-outline"></ion-icon></span>
-                        <span class="navigation__title">Text Editor</span>
+                        <span class="navigation__title">Template Menu</span>
                     </a>
                 </li>
                 <li class="navigation__item">

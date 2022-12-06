@@ -475,11 +475,14 @@ img {
     padding: 20px;
     display: flex;
     gap: 20px;
-    min-height: 200px;
+    height: 300px;
+    margin-bottom: 30px;
 }
 
 .main__graphbox {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #fff;
     padding: 20px;
     width: 100%;
@@ -488,7 +491,23 @@ img {
     border-radius: 20px;
 }
 
+
 .main__graphbox:hover {
+    border: 2px var(--hoverblue) solid;
+}
+
+.main__graphbox2 {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+}
+
+.main__graphbox2:hover {
     border: 2px var(--hoverblue) solid;
 }
 
@@ -500,9 +519,8 @@ img {
 }
 
 canvas#myChart2 {
-    height: 100px;
-    width: 100px;
-    margin-left: 40px;
+    height: 80px;
+    width: 80px;
 }
 
 .main__gallerybox {
@@ -712,6 +730,53 @@ canvas#myChart2 {
     background-color: rgb(145, 146, 149);
 }
 
+/* TAMBAH DATA BARANG */
+
+.additem__card {
+    display: flex;
+    background-color: var(--white);
+    width: 80%;
+    height: 400px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.30);
+    border-radius: 8px;
+    margin-top: 90px;
+    margin-left: 100px;
+}
+
+.additem__title {
+    font-size: 1.5em;
+    font-weight: 800;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--hoverblue);
+}
+
+/* EDIT DATA BARANG */
+
+.edititem__card {
+    display: flex;
+    background-color: var(--white);
+    width: 80%;
+    height: 400px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.30);
+    border-radius: 8px;
+    margin-top: 90px;
+    margin-left: 100px;
+}
+
+.edititem__title {
+    font-size: 1.5em;
+    font-weight: 800;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--hoverblue);
+}
+
+/* 
 .popup {
     position: fixed;
     top: 50px;
@@ -910,7 +975,7 @@ canvas#myChart2 {
 
 .item__saveedit:hover {
     background: var(--hoverblue);
-}
+} */
 
 
 .delete__popup {
@@ -1544,10 +1609,7 @@ canvas#myChart2 {
     margin-top: 8px;
 }
 
-/* Template FORM & TEXT EDITOR */
-a {
-    text-decoration: none;
-}
+/* Template Menu FORM & TEXT EDITOR */
 
 .template__container {
     display: flex;
@@ -1556,6 +1618,10 @@ a {
     margin: 65px 20px 0px 20px;
     justify-content: center;
     align-content: flex-start;
+}
+
+.template__container a {
+    text-decoration: none;
 }
 
 .template__header {
@@ -1597,7 +1663,8 @@ a {
 }
 
 .template__title {
-    font-size: 2.5em;
+    font-size: 2em;
+    font-weight: 700;
     color: var(--hoverblue);
 }
 
@@ -1605,7 +1672,7 @@ a {
 .template__overview {
     color: var(--hoverblue);
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 1em;
     margin-top: 5px;
 }
 
@@ -1616,41 +1683,33 @@ a {
 /* FORM */
 
 .form__container {
-    border: 3px solid var(--regular);
-    width: 69%;
-    margin: auto;
-    margin-top: 89px;
-    margin-bottom: 75px;
-    background-color: #f1f1f1;
-
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    border-radius: 5px;
+    background-color: var(--white);
+    width: 80%;
+    min-height: 400px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.30);
+    border-radius: 8px;
+    margin-top: 90px;
+    margin-left: 100px;
+    margin-bottom: 40px
 }
 
 .form__header {
-    font-size: 45px;
-    font-weight: 400;
-    margin-left: 47px;
-    margin-top: 27px;
-    margin-bottom: 35px;
-    width: 80px;
-
-    display: inline-block;
-    padding: 8px 0px;
-    border-bottom: 4px solid var(--regular);
-    line-height: 1em;
+    font-size: 35px;
+    font-weight: 800;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
     text-decoration: none;
+    color: var(--hoverblue);
 }
 
 .input__wrapper {
-    margin-left: 47px;
-    margin-bottom: 35px;
-    
+    margin: 20px 47px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 
 .form__input{
@@ -1660,17 +1719,74 @@ a {
     gap: 10px;
 }
 
-.form__input--dropdown{
+.form__input label {
+    font-weight: 800;
+    color: var(--hoverblue);
+}
+
+.form__input input {
+    height: 30px;
+    padding-left: 5px;
+}
+
+.form__input--dropdown {
     display: flex;
     flex-direction: column;
     width: 22%;
     gap: 10px;
 }
 
-.form__input--date{
+.form__input--dropdown label {
+    font-weight: 800;
+    color: var(--hoverblue);
+}
+
+.form__input--dropdown input {
+    height: 30px;
+    padding-left: 5px;
+}
+
+.form__input--date {
     display: flex;
     flex-direction: column;
     width: 18%;
+    gap: 10px;
+}
+
+.form__input--date label {
+    font-weight: 800;
+    color: var(--hoverblue);
+}
+
+.form__input--date input {
+    height: 30px;
+    padding-left: 5px;
+}
+
+
+.form__input--option {
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+.form__input--option label {
+    font-weight: 800;
+    color: var(--hoverblue);
+    margin-bottom: 10px;
+}
+
+.form__input--radio {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.form__input--checkbox {
+    display: flex;
+    flex-direction: row;
     gap: 10px;
 }
 
@@ -1683,10 +1799,96 @@ a {
     flex-direction: row;
 }
 
+.form__input--switch {
+  position: relative;
+  display: inline-block;
+  padding-top: 5px;
+  width: 40px;
+  height: 20px;
+}
+
+.form__input--switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.form__input--switchslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  box-shadow: 0 10px 18px rgba(0,0,0,0.08);
+}
+
+.form__input--switchslider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: var(--white);
+  transition: .4s;
+}
+
+input:checked + .form__input--switchslider {
+  background-color: var(--hoverblue);
+}
+
+input:focus + .form__input--switchslider {
+  box-shadow: 0 0 1px var(--hoverblue);
+}
+
+input:checked + .form__input--switchslider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+.form__input--switchslider.round {
+  border-radius: 14px;
+}
+
+.form__input--switchslider.round:before {
+  border-radius: 50%;
+}
+
+.form__input--slider {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+  
+.form__input--custslider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    transition: .2s;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.08);
+}
+
+.form__input--custslider:hover {
+    background-color: rgb(226, 223, 223);
+}
+  
+.form__input--custslider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--hoverblue);
+    cursor: pointer;
+}
+
 .form__input--button {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    gap: 415px;
+    margin: 30px 0px;
 }
 
 .form__input--button button {
@@ -1696,14 +1898,50 @@ a {
     width: 20%;
 }
 
-.form__button--confirm{
+.form__button--confirm {
     color: var(--white);
     background-color: var(--regular);
     border-radius: 5px;
     border: 0px;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.18);
 }
 
-.form__button--cancel{
+.form__button--confirm:hover {
+    background: var(--lightblue);
+}
+
+.form__button--cancel {
     color: var(--regular);
-    border: 2px solid var(--regular);
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.18);
+    border: 2px solid var(--hoverblue);
+}
+
+.form__button--cancel:hover {
+    background: #ccc;
+}
+
+
+/* TEXT EDITOR */
+
+.texteditor__container {
+    display: flex;
+    background-color: var(--white);
+    width: 80%;
+    height: 400px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.30);
+    border-radius: 8px;
+    margin-top: 90px;
+    margin-left: 100px;
+}
+
+.texteditor__header {
+    font-size: 35px;
+    font-weight: 800;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--hoverblue);
 }
