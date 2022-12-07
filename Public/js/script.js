@@ -7,6 +7,9 @@ let menusignout = document.querySelector('.navigation__menusignout');
 let box = document.getElementById('box');
 let down = false;
 let notif = document.getElementById('notif');
+let wysiwyg = document.getElementById('wysiwyg');
+
+CKEDITOR.replace('wysiwyg');
 
 toggle.onclick = function(){
     navigation.classList.toggle('navigation--active');
