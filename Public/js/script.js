@@ -44,6 +44,14 @@ function activeLink(){
 list.forEach((item) =>
 item.addEventListener('mouseover', activeLink));
 
+function viewAllFunc() {
+  var x = document.getElementById("carditem");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 const grOne = document.getElementById('myChart');
 

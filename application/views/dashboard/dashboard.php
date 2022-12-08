@@ -19,6 +19,9 @@
             ?>
             <div class="dashboard">
                 <div class="dashboard__title">Dashboard</div>
+                <div class="card__viewallbtn">
+                    <button onclick="viewAllFunc()">View All</button>
+                </div>
                 <div class="card">
                     <div class="card__good">
                         <a href="<?= base_url();?>Databarang">
@@ -56,7 +59,7 @@
                             <ion-icon name="help-outline"></ion-icon>
                         </div>
                     </div>
-                    <div class="card__item">
+                    <div id="carditem" class="card__item">
                         <a href="<?= base_url();?>Databarang">
                             <div class="card__itemrate"><?= $jumlahBarang ?></div>
                             <div class="card__itemname">Jumlah Semua Barang</div>
