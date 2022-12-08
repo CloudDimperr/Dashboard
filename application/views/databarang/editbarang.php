@@ -1,5 +1,63 @@
                     <div class="edititem__card">
                         <div class="edititem__title">Edit Data Barang</div>
+                        <form class="input__wrapper" action="">
+                            <!-- Kode Barang -->
+                            <div class="form__input">
+                                <label for="text">Kode Barang</label>
+
+                                <input type="text" name="" id="text" placeholder="Input your text...">
+                            </div>
+
+                            <!-- Nama Barang -->
+                            <div class="form__input">
+                                <label for="text">Nama Barang</label>
+
+                                <input type="text" name="" id="text" placeholder="Input your text...">
+                            </div>
+
+                            <!-- Bahan/Merk -->
+                            <div class="form__input">
+                                <label for="text">Bahan/Merk</label>
+
+                                <input type="text" name="" id="text" placeholder="Input your text...">
+                            </div>
+
+                            <!-- Jumlah Barang -->
+                            <div class="form__input">
+                                <label for="text">Jumlah Barang</label>
+
+                                <input type="text" name="" id="text" placeholder="Input your text...">
+                            </div>
+
+                            <!-- Gambar Barang -->
+                            <div class="form__input">
+                                <label for="file">Gambar Barang </label>
+
+                                <input type="file" name="" id="file">
+                            </div>
+
+                            <!-- Drop down -->
+                            <div class="form__input--dropdown"> 
+                                <label for="dropdown"> Keterangan Barang </label>
+
+                                <input type="text" name="dropdown" placeholder="Pilih item" list="listoption">
+                                <datalist id="listoption">
+                                    <option value="Baik">
+                                    <option value="Kurang Baik">
+                                    <option value="Rusak">
+                                    <option value="Hilang">
+                                </datalist>
+                            </div>
+
+                            <div class="item__addoption">
+                                <a href="<?= base_url(); ?>Databarang">
+                                    <span class="item__canceladd">Batal</span>
+                                </a>
+                                <a href="<?= base_url(); ?>Databarang">
+                                    <span class="item__saveadd">Simpan</span>
+                                </a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

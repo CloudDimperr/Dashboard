@@ -847,13 +847,15 @@ canvas#myChart2 {
 
 .additem__card {
     display: flex;
+    flex-direction: column;
     background-color: var(--white);
     width: 80%;
-    height: 400px;
+    min-height: 400px;
     box-shadow: 0 7px 25px rgba(0,0,0,0.30);
     border-radius: 8px;
     margin-top: 90px;
     margin-left: 100px;
+    margin-bottom: 40px
 }
 
 .additem__title {
@@ -870,13 +872,15 @@ canvas#myChart2 {
 
 .edititem__card {
     display: flex;
+    flex-direction: column;
     background-color: var(--white);
     width: 80%;
-    height: 400px;
+    min-height: 400px;
     box-shadow: 0 7px 25px rgba(0,0,0,0.30);
     border-radius: 8px;
     margin-top: 90px;
     margin-left: 100px;
+    margin-bottom: 40px
 }
 
 .edititem__title {
@@ -1010,7 +1014,7 @@ canvas#myChart2 {
     outline: none;
     border: 1px solid var(--black);
     border-radius: 5px;
-}
+} */
 
 .item__addoption {
     display: flex;
@@ -1038,7 +1042,7 @@ canvas#myChart2 {
 }
 
 .item__saveadd {
-    background: var(--barang);
+    background: var(--hoverblue);
     padding: 5px 12px;
     width: 75px;
     height: 40px;
@@ -1048,10 +1052,10 @@ canvas#myChart2 {
 }
 
 .item__saveadd:hover {
-    background: var(--hoverblue);
+    background: var(--lightblue);
 }
 
-.item__editoption {
+/* .item__editoption {
     display: flex;
     justify-content: space-between;
     width: 100%;
