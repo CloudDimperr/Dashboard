@@ -34,7 +34,8 @@
                         </thead>
                         <tbody>
                             <?php
-                                foreach ( $dataBarang as $row ) : 
+                                foreach ( $dataBarang as $row ) :
+                                    $ket = str_replace('_', ' ',$row->keterangan);
                             ?>
                                 <tr>
                                 <td><input type="checkbox"></td>
@@ -43,7 +44,7 @@
                                 <td><?= $row->bahan; ?></td>
                                 <td><?= $row->jumlah; ?></td>
                                 <td><span class="dataitem__img"><img src="<?= base_url();?>/public/assets/<?= $row->gambar; ?>"></span></td>
-                                <td><?= $row->keterangan; ?></td>
+                                <td><span class="dataitem__keterangan--<?= $row->keterangan; ?>"><?= $ket; ?></span></td>
                                 <td>
                                     <a href="<?= base_url(); ?>Databarang/EditBarang/<?= $row->id ?>">
                                         <span class="dataitem__editicon"><ion-icon name="create-outline"></ion-icon></span>
@@ -76,7 +77,8 @@
                         </thead>
                         <tbody>
                             <?php
-                                foreach ( $dataBarang as $row ) : 
+                                foreach ( $dataBarang as $row ) :
+                                    $ket = str_replace('_', ' ',$row->keterangan);
                             ?>
                                 <tr>
                                 <td><?= $i ?></td>
@@ -85,7 +87,7 @@
                                 <td><?= $row->bahan; ?></td>
                                 <td><?= $row->jumlah; ?></td>
                                 <td><span class="dataitem__img"><img src="<?= base_url();?>/public/assets/<?= $row->gambar; ?>"></span></td>
-                                <td><?= $row->keterangan; ?></td>
+                                <td><span class="dataitem__keterangan--<?= $row->keterangan; ?>"><?= $ket; ?></span></td>
                                 <td>
                                     <a href="<?= base_url(); ?>Databarang/EditBarang/<?= $row->id ?>">
                                         <span class="dataitem__editicon"><ion-icon name="create-outline"></ion-icon></span>

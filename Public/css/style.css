@@ -850,6 +850,33 @@ canvas#myChart2 {
     background-color: rgb(145, 146, 149);
 }
 
+.dataitem__keterangan--Baik {
+    background-color: var(--baik);
+    padding: 6px 19px;
+    border-radius: 10%;
+}
+
+.dataitem__keterangan--Kurang_Baik {
+    background-color: var(--krgbaik);
+    padding: 6px 10px;
+    border-radius: 10%;
+    
+}
+
+.dataitem__keterangan--Rusak {
+    background-color: var(--rusak);
+    padding: 6px 19px;
+    border-radius: 10%;
+    
+}
+
+.dataitem__keterangan--Hilang {
+    background-color: var(--hilang);
+    padding: 6px 19px;
+    border-radius: 10%;
+    
+}
+
 /* TAMBAH DATA BARANG */
 
 .additem__card {
