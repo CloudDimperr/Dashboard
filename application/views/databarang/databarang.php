@@ -10,7 +10,7 @@
                                 <span>Tambah Barang<ion-icon name="add-circle-outline"></ion-icon></span>
                             </a>    
                         </div>
-                        <div class="dataitem__search">
+                        <div class="dataitem__search" id="search_bar">
                             <label>
                                 <input type="text" placeholder="Search...">
                                 <ion-icon name="search-outline"></ion-icon>

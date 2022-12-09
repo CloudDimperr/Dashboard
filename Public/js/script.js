@@ -7,6 +7,7 @@ let menusignout = document.querySelector('.navigation__menusignout');
 let box = document.getElementById('box');
 let down = false;
 let notif = document.getElementById('notif');
+let search = document.getElementById('search_bar');
 let wysiwyg = document.getElementById('wysiwyg');
 
 CKEDITOR.replace('wysiwyg');
@@ -24,6 +25,10 @@ notif.onclick = function() {
     box.style.width = '0%';
     box.style.opacity = '0';
     box.style.right = '-95px';
+    if (search !== null) {
+      search.style.right = '0px';
+      search.style.opacity = '1';
+    }
     down = false;
   } else
   {
@@ -31,6 +36,12 @@ notif.onclick = function() {
     box.style.width = '300px';
     box.style.opacity = '1';
     box.style.right = '293px';
+    box.style.backgroundColor = 'var(--white)';
+
+    if (search !== null) {
+      search.style.right = '-355px;';
+      search.style.opacity = '0'; 
+    }
     down = true;
   }
 }
@@ -46,10 +57,11 @@ item.addEventListener('mouseover', activeLink));
 
 function viewAllFunc() {
   var x = document.getElementById("carditem");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+  if (x.style.display === "flex") {
     x.style.display = "none";
+  } else {
+    x.style.display = "flex"
+    x.style.flexDirection = "row";
   }
 }
 

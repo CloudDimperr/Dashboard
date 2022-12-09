@@ -253,7 +253,7 @@ img {
     height: 0px;
     position: absolute;
     top: 50px;
-    right: 293px;
+    right: -95px;
     opacity: 0;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 2%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     border-radius: 10px;
@@ -464,7 +464,6 @@ img {
 }
 
 .card__item {
-    display: none;
     position: relative;
     flex: 1 0 20%;
     background: var(--white);
@@ -474,6 +473,10 @@ img {
     justify-content: space-between;
     cursor: pointer;
     box-shadow: 0 7px 25px rgba(0,0,0,0.20);
+}
+
+#carditem {
+    display: none;
 }
 
 .card__item a {
