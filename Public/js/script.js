@@ -53,6 +53,23 @@ function viewAllFunc() {
   }
 }
 
+function dropdownFunc() {
+  document.getElementById("myDropdown").classList.toggle("form__input--dropdownshow");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.form__input--dropbtn')) {
+    var dropdowns = document.getElementsByClassName("form__input--dropdowncontent");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('form__input--dropdownshow')) {
+        openDropdown.classList.remove('form__input--dropdownshow');
+      }
+    }
+  }
+}
+
 const grOne = document.getElementById('myChart');
 
   new Chart(grOne, {

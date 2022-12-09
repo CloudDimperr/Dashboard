@@ -19,7 +19,7 @@
                     </div>
 
                     <!-- File -->
-                    <div class="form__input">
+                    <div class="form__input--upload">
                         <label for="file"> UPLOAD FILE </label>
 
                         <input type="file" name="" id="file">
@@ -35,6 +35,14 @@
                             <option value="B">
                             <option value="C">
                         </datalist>
+                    </div>
+                    <div class="form__input--dropdowncust">
+                        <button onclick="dropdownFunc()" type="button" class="form__input--dropbtn">Pilih Item</button>
+                        <div id="myDropdown" class="form__input--dropdowncontent">
+                            <a href="#">Option 1</a>
+                            <a href="#">Option 2</a>
+                            <a href="#">Option 3</a>
+                        </div>
                     </div>
 
                     <!-- Date -->

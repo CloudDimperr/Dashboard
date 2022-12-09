@@ -260,6 +260,7 @@ img {
     transition: 1s opacity, 250ms height;
     padding-bottom: 8px;
     background-color: var(--white);
+    z-index: 1;
 }
 
 .notif__title  {
@@ -740,6 +741,7 @@ canvas#myChart2 {
     position: relative;
     width: 180px;
     margin-right: 30px;
+    z-index: 1;
 }
 
 .dataitem__search label {
@@ -822,6 +824,7 @@ canvas#myChart2 {
     padding-top: 4px;
     color: var(--white);
     cursor: pointer;
+    z-index: 1;
 }
 
 .dataitem__editicon:hover,
@@ -836,6 +839,7 @@ canvas#myChart2 {
     padding-top: 4px;
     color: var(--hoverblue);
     cursor: pointer;
+    z-index: 1;
 }
 
 .dataitem__deleteicon:hover,
@@ -1158,10 +1162,40 @@ canvas#myChart2 {
 
 /* sign in */
 
+.signin__container {
+    display: flex;
+    justify-content: center;
+}
+
+.signin__card {
+    background: var(--white);
+    position: relative;
+    width: 800px;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+    margin-top: 100px;
+}
+
+.signin__card--row1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.signin__card--row2 {
+    display: flex;
+    flex-direction: column;
+}
+
 .signin__image {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-right: 16px;
 }
 
 .signin__image img {
@@ -1169,23 +1203,11 @@ canvas#myChart2 {
     height: 140px;
 }
 
-.signin__card {
-    background: var(--white);
-    border: 2px solid var(--hoverblue);
-    position: relative;
-    top: 30px;
-    left: 500px;
-    width: 300px;
-    height: 320px;
-    padding: 20px;
-    display: block;
-    border-radius: 5px;
-    box-shadow: 0 5px 30px rgba(0,0,0,0.30);
-}
 
 .signin__title {
-    color: var(--hoverblue);
-    font-weight: bolder;
+    color: var(--darkblue);
+    font-size: 1.5em;
+    font-weight: 900;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -1193,6 +1215,7 @@ canvas#myChart2 {
 .signin__uname {
     margin-bottom: 5px;
     color: var(--hoverblue);
+    font-weight: 700;
 }
 
 .signin__uname label input {
@@ -1207,6 +1230,7 @@ canvas#myChart2 {
 .signin__password {
     margin-bottom: 5px;
     color: var(--hoverblue);
+    font-weight: 700;
 }
 
 .signin__password label input {
@@ -1665,6 +1689,7 @@ canvas#myChart2 {
     padding-bottom: 5px;
     border-radius: 10px;
     transition: all .3s ease-in-out; 
+    z-index: 1;
 }
 
 .gallery__photo:hover {
@@ -1715,6 +1740,7 @@ canvas#myChart2 {
     text-align: center;
     line-height: 50px;
     border-radius: 5px;
+    z-index: 2;
 }
 
 .gallery__gotoup:hover {
@@ -1830,6 +1856,24 @@ canvas#myChart2 {
     gap: 20px;
 }
 
+.form__input--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form__input--row1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__input--row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .form__input{
     display: flex;
     flex-direction: column;
@@ -1843,6 +1887,26 @@ canvas#myChart2 {
 }
 
 .form__input input {
+    width: 300px;
+    height: 30px;
+    padding-left: 5px;
+    border: 2px solid var(--hoverblue);
+    border-radius: 5px;
+}
+
+.form__input--upload {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.form__input--upload label {
+    font-weight: 800;
+    color: var(--hoverblue);
+}
+
+.form__input--upload input {
     height: 30px;
     padding-left: 5px;
 }
@@ -1862,6 +1926,55 @@ canvas#myChart2 {
 .form__input--dropdown input {
     height: 30px;
     padding-left: 5px;
+}
+
+.form__input--dropbtn {
+    background-color: var(--hoverblue);
+    color: var(--white);
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: -10px;
+}
+  
+.form__input--dropbtn:hover, .form__input--dropbtn:focus {
+    background-color: var(--lightblue);
+}
+  
+.form__input--dropdowncust {
+    position: relative;
+    display: inline-block;
+}
+  
+.form__input--dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    border: 2px solid var(--hoverblue);
+}
+  
+.form__input--dropdowncontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: 1px dashed var(--hoverblue);
+}
+  
+.form__input--dropdowncust a:hover {
+    background-color: #f2f2f2;
+}
+  
+.form__input--dropdownshow {
+    display: block;
 }
 
 .form__input--date {

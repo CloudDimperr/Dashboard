@@ -1,52 +1,57 @@
                     <div class="additem__card">
                         <div class="additem__title">Tambah Data Barang</div>
                         <form class="input__wrapper" action="">
-                            <!-- Kode Barang -->
-                            <div class="form__input">
-                                <label for="text">Kode Barang</label>
-
-                                <input type="text" name="" id="text" placeholder="Input your text...">
-                            </div>
-
-                            <!-- Nama Barang -->
-                            <div class="form__input">
-                                <label for="text">Nama Barang</label>
-
-                                <input type="text" name="" id="text" placeholder="Input your text...">
-                            </div>
-
-                            <!-- Bahan/Merk -->
-                            <div class="form__input">
-                                <label for="text">Bahan/Merk</label>
-
-                                <input type="text" name="" id="text" placeholder="Input your text...">
-                            </div>
-
-                            <!-- Jumlah Barang -->
-                            <div class="form__input">
-                                <label for="text">Jumlah Barang</label>
-
-                                <input type="text" name="" id="text" placeholder="Input your text...">
+                            <div class="form__input--row">
+                                <div class="form__input--row1">
+                                    <!-- Kode Barang -->
+                                    <div class="form__input">
+                                        <label for="text">Kode Barang</label>
+        
+                                        <input type="text" name="" id="text" placeholder="Masukkan Kode Barang...">
+                                    </div>
+        
+                                    <!-- Nama Barang -->
+                                    <div class="form__input">
+                                        <label for="text">Nama Barang</label>
+        
+                                        <input type="text" name="" id="text" placeholder="Masukkan Nama Barang...">
+                                    </div>
+                                </div>
+                                <div class="form__input--row2">
+                                    <!-- Bahan/Merk -->
+                                    <div class="form__input">
+                                        <label for="text">Bahan/Merk</label>
+        
+                                        <input type="text" name="" id="text" placeholder="Masukkan Bahan/Merk...">
+                                    </div>
+        
+                                    <!-- Jumlah Barang -->
+                                    <div class="form__input">
+                                        <label for="text">Jumlah Barang</label>
+        
+                                        <input type="text" name="" id="text" placeholder="Masukkan Jumlah Barang...">
+                                    </div>
+                                </div>
                             </div>
 
                             <!-- Gambar Barang -->
-                            <div class="form__input">
+                            <div class="form__input--upload">
                                 <label for="file">Gambar Barang </label>
 
                                 <input type="file" name="" id="file">
                             </div>
 
-                            <!-- Drop down -->
-                            <div class="form__input--dropdown"> 
-                                <label for="dropdown"> Keterangan Barang </label>
-
-                                <input type="text" name="dropdown" placeholder="Pilih item" list="listoption">
-                                <datalist id="listoption">
-                                    <option value="Baik">
-                                    <option value="Kurang Baik">
-                                    <option value="Rusak">
-                                    <option value="Hilang">
-                                </datalist>
+                            <!-- Keterangan Barang -->
+                            <div class="form__input--dropdowncust">
+                                <button onclick="dropdownFunc()" type="button" class="form__input--dropbtn">
+                                    Pilih Item <ion-icon name="chevron-down-outline"></ion-icon>
+                                </button>
+                                <div id="myDropdown" class="form__input--dropdowncontent">
+                                    <a href="#">Baik</a>
+                                    <a href="#">Kurang Baik</a>
+                                    <a href="#">Rusak</a>
+                                    <a href="#">Hilang</a>
+                                </div>
                             </div>
 
                             <div class="item__addoption">
