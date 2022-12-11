@@ -688,6 +688,147 @@ canvas#myChart2 {
     height: 180px;
 }
 
+/* Calendar */
+
+.main__calendar {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 200px;
+    cursor: pointer;
+}
+
+.calendar__Container {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    width: 450px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+}
+
+.calendar__Container:hover {
+    border: 2px var(--hoverblue) solid;
+}
+
+.calendar__title {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--regular);
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--darkblue);
+    padding-bottom: 10px;
+}
+
+.calendar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px 10px;
+}
+
+.calendar__currentdate {
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--hoverblue);
+}
+
+.calendar__icon i {
+    height: 38px;
+    width: 38px;
+    margin: 0px 1px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--darkblue);
+    font-size: 18px;
+}
+
+.calendar__icon i:last-child {
+    margin-right: -10px;
+}
+
+.calendar__icon i:hover {
+    background-color: #f2f2f2;
+}
+
+.calendar__items {
+    padding: 20px;
+}
+
+.calendar__items ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.calendar__items ul li {
+    position: relative;
+    width: calc( 100% / 7);
+}
+
+.calendar__weeks li {
+    font-weight: 700;
+    color: var(--darkblue);
+}
+
+.calendar__days {
+    margin-bottom: 10px;
+}
+
+.calendar__days li {
+    cursor: pointer;
+    color: var(--hoverblue);
+    font-weight: 700;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.calendar__days li.--inactive{
+    font-weight: 200;
+    color: var(--lightblue);
+}
+
+.calendar__days li.--inactive::before{
+    font-weight: 200;
+    color: var(--lightblue);
+}
+
+.calendar__days li.active {
+    color: var(--white);
+}
+
+.calendar__days li.active::before {
+    background: var(--regular);
+}
+
+
+.calendar__days li:hover {
+    color: var(--white);
+}
+
+.calendar__days li::before {
+    position: absolute;
+    content: " ";
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.calendar__days li:hover::before {
+    background: var(--lightblue);
+}
+
 /* data barang */
 
 .dataitem__title {
