@@ -4,28 +4,24 @@
                 </div>
                 <form class="input__wrapper" action="">
 
-                    <!-- Text -->
                     <div class="form__input">
                         <label for="text"> TEXT</label>
 
                         <input type="text" name="" id="text" placeholder="Input your text...">
                     </div>
 
-                    <!-- Password -->
                     <div class="form__input">
                         <label for="password"> PASSWORD</label>
 
                         <input type="password" name="" id="password" placeholder="Input your password...">
                     </div>
 
-                    <!-- File -->
                     <div class="form__input--upload">
                         <label for="file"> UPLOAD FILE </label>
 
                         <input type="file" name="" id="file">
                     </div>
 
-                    <!-- Drop down -->
                     <div class="form__input--dropdown"> 
                         <label for="dropdown"> DROP DOWN </label>
 
@@ -45,14 +41,12 @@
                         </div>
                     </div>
 
-                    <!-- Date -->
                     <div class="form__input--date">
                         <label for="date"> DATE </label>
 
                         <input type="date" name="" id="date">
                     </div>
 
-                    <!-- Radio -->
                     <div class="form__input--option">
                         <label for="radio"> OPTION </label>
 
@@ -63,7 +57,6 @@
                         </div>
                     </div>
 
-                    <!-- checkbox -->
                     <div class="form__input--option">
                         <label for="checkbox"> CHECKBOX </label>
 
@@ -74,7 +67,6 @@
                         </div>
                     </div>
 
-                    <!-- toggle -->
                     <div class="form__input">
                         <label for="switch"> TOGGLE SWITCH </label>
                         <label class="form__input--switch">
@@ -88,7 +80,6 @@
                         </label>
                     </div>
 
-                    <!-- Textarea -->
                     <div class="form__input">
                         <label for="textarea"> TEXT AREA </label>
 
@@ -96,7 +87,6 @@
                         </textarea>
                     </div>
 
-                    <!-- Textarea resize disable -->
                     <div class="form__input">
                         <label for="textarea"> TEXT AREA </label>
 
@@ -104,7 +94,6 @@
                         </textarea>
                     </div>
 
-                    <!-- Slider -->
                     <div class="form__input--slider">
                         <label for="slider"> SLIDER </label>
 

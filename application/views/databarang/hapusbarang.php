@@ -54,7 +54,6 @@
                                 </td>
                                 </tr>
                             <?php 
-                                // $i += 1;
                                 endforeach; 
                             ?>
                         </tbody>

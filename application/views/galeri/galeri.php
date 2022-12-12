@@ -4,18 +4,14 @@
                 </div>
 
                 <div class="photo__wrapper">
-                    <!-- foreach() :  -->
                     <div class="gallery__item">
-                        <!-- foreach() : -->
                         <img src="<?= base_url(); ?>public/assets/1.png" alt="photo" class="gallery__photo">
                         <img src="<?= base_url(); ?>public/assets/2.png" alt="photo" class="gallery__photo">
                         <img src="<?= base_url(); ?>public/assets/3.png" alt="photo" class="gallery__photo">
                         <img src="<?= base_url(); ?>public/assets/4.png" alt="photo" class="gallery__photo">
                         <img src="<?= base_url(); ?>public/assets/5.png" alt="photo" class="gallery__photo">
-                        <!-- endforeach  -->
                     </div>
-                    <!-- endforeach: -->
-                    <div class="gallery__item">
+                   <div class="gallery__item">
                         <img src="<?= base_url(); ?>public/assets/6.png" alt="photo" class="gallery__photo">
                         <img src="<?= base_url(); ?>public/assets/7.png" alt="photo" class="gallery__photo">
                         <img src="<?= base_url(); ?>public/assets/8.png" alt="photo" class="gallery__photo">
