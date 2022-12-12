@@ -17,6 +17,11 @@ class BarangModel extends CI_Model
         return $query->result();
     }
 
+    public function get_ById($id)
+    {
+        return $this->db->get_where($this->table, ["id" => $id])->row();
+    }
+
     // menghapus barang
     public function delete($id)
     {
@@ -24,14 +29,14 @@ class BarangModel extends CI_Model
     }
 
     // Menambahkan barang
-    public function add()
+    public function add($data)
     {
-
+        return $this->db->insert($this->table, $data);
     }
 
     // Mengedit barang
-    public function edit($id)
+    public function edit($data, $id)
     {
-
+        return $this->db->update($this->table, $data, ['id' => $id]);
     }
 }

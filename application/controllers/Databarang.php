@@ -23,6 +23,7 @@ class Databarang extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('BarangModel');
+		$this->load->library('upload');
 	}
 
 	public function index()
@@ -38,16 +39,31 @@ class Databarang extends CI_Controller {
         $this->load->view('templates/footer');
 	}
 
-	public function editbarang()
+	public function editbarang($id)
 	{
 		$data['title'] = 'EDIT BARANG';
-		$data['dataBarang'] = $this->BarangModel->get_barang();
+        $data['id'] = $id;
+		$data['databarang'] = $this->BarangModel->get_ById($id);
 
 		$this->load->helper('url');
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidetopbar');
 		$this->load->view('databarang/editbarang', $data);
         $this->load->view('templates/footer');
+	}
+
+	public function update($id){
+		$data = [
+			'kode' => $this->input->post('kode'),
+			'nama' => $this->input->post('nama'),	
+			'bahan' => $this->input->post('bahan'),
+			'jumlah' => $this->input->post('jumlah'),
+			'keterangan' => $this->input->post('keterangan'),
+			'gambar' => $this->input->post('gambar')
+		];
+
+        $this->BarangModel->edit($data, $id);
+        redirect(base_url('Databarang'));
 	}
 
 	public function hapusbarang($id)
@@ -79,5 +95,18 @@ class Databarang extends CI_Controller {
         $this->load->view('templates/sidetopbar');
 		$this->load->view('databarang/tambahbarang', $data);
         $this->load->view('templates/footer');
+	}
+
+	public function add() {
+		$data = [
+			'kode' => $this->input->post('kode'),
+			'nama' => $this->input->post('nama'),	
+			'bahan' => $this->input->post('bahan'),
+			'jumlah' => $this->input->post('jumlah'),
+			'keterangan' => $this->input->post('keterangan'),
+			'gambar' => $this->input->post('gambar')
+		];
+		$this->BarangModel->add($data);
+		redirect(base_url('Databarang'));
 	}
 }

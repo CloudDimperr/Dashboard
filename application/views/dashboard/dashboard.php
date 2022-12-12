@@ -6,7 +6,7 @@
                 } elseif ($row->keterangan == 'Rusak')
                 {
                     $barangRusak += $row->jumlah;
-                } elseif ($row->keterangan == 'Kurang Baik')
+                } elseif ($row->keterangan == 'Kurang_Baik')
                 {
                     $barangKurangbaik += $row->jumlah;
                 } elseif ($row->keterangan == 'Hilang') 
