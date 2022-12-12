@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 02, 2022 at 03:22 AM
+-- Generation Time: Dec 12, 2022 at 10:49 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -42,11 +42,11 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id`, `kode`, `nama`, `bahan`, `jumlah`, `keterangan`, `gambar`) VALUES
-(3, 'A-001-18', 'Loker', 'Besi', 1, 'Baik', 'a-001-18.jpg'),
-(4, 'A-002-18', 'Kipas Angin', 'Miyako', 1, 'Kurang Baik', 'a-002-18.jpg'),
-(10, 'A-003-18', 'Stand Mic', 'Krezt', 1, 'Kurang Baik', 'a-003-18.jpg'),
-(11, 'A-004-18', 'Kursi Cokelat', 'Kayu', 1, 'Baik', 'a-004-18.jpg'),
-(12, 'A-005-18', 'Dispenser', 'Cosmos', 1, 'Baik', 'a-005-18.jpg');
+(22, 'A-001-18', 'Loker', 'Besi', 12, 'Baik', 'a-001-181.jpg'),
+(23, 'A-002-18', 'Kipas Angin', 'Miyako', 10, 'Kurang_Baik', 'a-002-181.jpg'),
+(24, 'A-003-18', 'Stand Mic', 'Kretz', 9, 'Kurang_Baik', 'a-003-182.jpg'),
+(25, 'A-004-18', 'Kursi Cokelat', 'Kayu', 2, 'Baik', 'a-004-181.jpg'),
+(26, 'A-005-18', 'Dispenser', 'Cosmos', 2, 'Baik', 'a-005-181.jpg');
 
 --
 -- Indexes for dumped tables
@@ -56,8 +56,7 @@ INSERT INTO `barang` (`id`, `kode`, `nama`, `bahan`, `jumlah`, `keterangan`, `ga
 -- Indexes for table `barang`
 --
 ALTER TABLE `barang`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `kode` (`kode`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -67,7 +66,7 @@ ALTER TABLE `barang`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

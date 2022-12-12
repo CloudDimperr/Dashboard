@@ -23,7 +23,6 @@ class Databarang extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('BarangModel');
-		$this->load->library('upload');
 	}
 
 	public function index()
@@ -53,13 +52,36 @@ class Databarang extends CI_Controller {
 	}
 
 	public function update($id){
+		
+		if (empty($_FILES['gambar']['name']))
+		{
+			$uploadGambar = $this->input->post('gambarlama');
+
+		} else
+		{
+			$config['upload_path'] = './public/assets';
+			$config['allowed_types'] = 'jpg|png|jpeg';
+			$config['encrypt_name'] = TRUE;
+
+			$new_name = time().$_FILES["gambar"]['name'];
+			$config['file_name'] = $new_name;
+			$this->load->library('upload', $config);
+
+			if (!$this->upload->do_upload('gambar')){
+				echo 'Upload Gambar Gagal';
+				die();
+			} else {
+				$uploadGambar = $this->upload->data('file_name');
+			}
+		}
+
 		$data = [
 			'kode' => $this->input->post('kode'),
 			'nama' => $this->input->post('nama'),	
 			'bahan' => $this->input->post('bahan'),
 			'jumlah' => $this->input->post('jumlah'),
 			'keterangan' => $this->input->post('keterangan'),
-			'gambar' => $this->input->post('gambar')
+			'gambar' => $uploadGambar
 		];
 
         $this->BarangModel->edit($data, $id);
@@ -98,14 +120,31 @@ class Databarang extends CI_Controller {
 	}
 
 	public function add() {
-		$data = [
-			'kode' => $this->input->post('kode'),
-			'nama' => $this->input->post('nama'),	
-			'bahan' => $this->input->post('bahan'),
-			'jumlah' => $this->input->post('jumlah'),
-			'keterangan' => $this->input->post('keterangan'),
-			'gambar' => $this->input->post('gambar')
-		];
+
+		if ($_FILES['gambar']['name'] == ''){}else{
+			$config['upload_path'] = './public/assets';
+			$config['allowed_types'] = 'jpg|png|jpeg';
+			$config['encrypt_name'] = TRUE;
+
+			$new_name = time().$_FILES["gambar"]['name'];
+			$config['file_name'] = $new_name;
+			$this->load->library('upload', $config);
+
+			if (!$this->upload->do_upload('gambar')){
+				echo 'Anda Perlu Upload Gambar';
+				die();
+			} else {
+				$data = [
+					'kode' => $this->input->post('kode'),
+					'nama' => $this->input->post('nama'),	
+					'bahan' => $this->input->post('bahan'),
+					'jumlah' => $this->input->post('jumlah'),
+					'keterangan' => $this->input->post('keterangan'),
+					'gambar' => $this->upload->data('file_name')
+				];
+			}
+		}
+
 		$this->BarangModel->add($data);
 		redirect(base_url('Databarang'));
 	}
