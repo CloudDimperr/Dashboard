@@ -1847,7 +1847,6 @@ canvas#myChart2 {
     padding-bottom: 5px;
     border-radius: 10px;
     transition: all .3s ease-in-out; 
-    z-index: 1;
 }
 
 .gallery__photo:hover {
@@ -1860,6 +1859,7 @@ canvas#myChart2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 0;
 }
 
 .gallery__item {
