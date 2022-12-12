@@ -10,9 +10,8 @@ Request change:
 7. Ubah pop-up menjadi form
 8. masukkan drop down, time picker/time date, option, check box, toogle, text area, slider, wysiwyg editor pada form
 
-Tugas
--- : grafik atau chart
--- : variasi table
--- : form
--- : galeri,notifikasi dan BE
-
+Kelompok 7 :
+1. Dimas Permana (D121201007)
+2. Nabilah Az Zahra (D121201024)
+3. Andi Muhammad Rezky M (D121201020)
+4. Muhammad Arfan Bahrun (D121201010)
