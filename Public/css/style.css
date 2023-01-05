@@ -751,7 +751,7 @@ canvas#myChart2 {
     color: var(--hoverblue);
 }
 
-.calendar__icon i {
+.calendar__icon span {
     height: 38px;
     width: 38px;
     margin: 0px 1px;
@@ -763,11 +763,11 @@ canvas#myChart2 {
     font-size: 18px;
 }
 
-.calendar__icon i:last-child {
+.calendar__icon span:last-child {
     margin-right: -10px;
 }
 
-.calendar__icon i:hover {
+.calendar__icon span:hover {
     background-color: #f2f2f2;
 }
 
